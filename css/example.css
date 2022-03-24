@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body footer .footer--redes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+  body footer .footer--redes .insta {
+    margin-right: -40%; }
+
+body footer .footer--categorias {
+  text-align: center;
+  margin-top: 2rem; }
+  body footer .footer--categorias ul {
+    text-decoration: none; }
+    body footer .footer--categorias ul li {
+      margin-top: 1rem; }
+
+body footer .footer--contacto {
+  text-align: center;
+  margin-top: 3rem; }
+  body footer .footer--contacto ul {
+    text-decoration: none; }
+    body footer .footer--contacto ul li {
+      margin-top: 1rem; }
+
+body footer .footer--pagos {
+  margin: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  body footer .footer--pagos span {
+    border: solid 1px gray;
+    margin: 4px;
+    padding: 6px; }
+    body footer .footer--pagos span img {
+      height: 35px;
+      width: 50px; }
+
+body footer .wsppFixed {
+  position: fixed;
+  z-index: 9999;
+  bottom: 1%;
+  right: 3%;
+  width: 11%; }
