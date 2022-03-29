@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.style-cards {
+  margin: 200rem;
+  color: red;
+  background-color: red; }
+
+body {
+  max-width: 100%; }
