@@ -1,0 +1,37 @@
+body{
+    footer{
+        .footer-column-1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .footer-column-2{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-content: center;
+            i{
+                font-size: 50px;
+            }
+        }
+        .footer-right{
+            a{
+                text-decoration: none;
+            }
+            p{
+                margin-bottom: 5px;
+            }
+        }
+        .footer-logo{
+            width: 100%;
+        }
+        .wsppFixed{
+            position: fixed;
+            z-index: 9999;
+            bottom: 1%;
+            right: 3%;
+            width: 11%;
+            
+        }
+    }
+}
