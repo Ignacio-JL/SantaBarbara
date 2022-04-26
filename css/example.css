@@ -7,6 +7,11 @@
   color: red;
   background-color: red; }
 
+.logo-sizing {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem; }
+
 body footer .footer-column-1 {
   display: flex;
   flex-direction: column;
@@ -35,6 +40,65 @@ body footer .wsppFixed {
   bottom: 1%;
   right: 3%;
   width: 11%; }
+
+.newsl-sty {
+  display: grid;
+  grid-template-columns: 30% 15% 55%;
+  grid-template-rows: 100%;
+  grid-template-areas: "one  two  three"; }
+  .newsl-sty-1 {
+    grid-area: one;
+    justify-content: center; }
+  .newsl-sty-2 {
+    grid-area: two;
+    width: 80%;
+    height: 80%; }
+  .newsl-sty-3 {
+    grid-area: three; }
+
+@media only screen and (max-width: 700px) {
+  .newsl-sty {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "two   one" "three three"; }
+    .newsl-sty-1 {
+      font-size: 0.7rem; }
+    .newsl-sty-3 {
+      padding: 0.5rem; } }
+
+@media only screen and (max-width: 700px) {
+  .mq-column {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    grid-template-areas: "change  shipping  pay";
+    font-size: smaller; }
+    .mq-column-change {
+      grid-area: change; }
+    .mq-column-shipping {
+      grid-area: shipping; }
+    .mq-column-pay {
+      grid-area: pay; } }
+
+.info-sty {
+  max-width: 100%;
+  border: 0;
+  margin: 2rem 10rem; }
+  .info-sty-text {
+    text-align: justify; }
+
+@media only screen and (max-width: 900px) {
+  .info-sty {
+    margin: 0.5rem 5rem; } }
+
+.navegation-sty {
+  text-decoration: none;
+  color: black;
+  font-weight: bold; }
+
+.img-sty {
+  width: 100%;
+  height: 100%; }
 
 body {
   position: relative;
