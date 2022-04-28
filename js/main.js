@@ -1,3 +1,4 @@
+//Inicio Crear cards segun info el json
 const items = document.getElementById('items')
 const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
@@ -5,16 +6,6 @@ const fragment = document.createDocumentFragment()
 document.addEventListener('DOMContentLoaded', () => {
     fetchData()
 })
-
-items.addEventListener('click', e => {
-    addCarrito(e)
-})
-
-const addCarrito = e => {
-    if (e.target.classList.contains('select-button')) {
-        //para crear el carrito.
-    }
-}
 
 const fetchData = async () => {
     try {
@@ -41,3 +32,36 @@ const bikiniCards = data => {
     })
     items.appendChild(fragment)
 }
+//Fin crear cards
+
+
+//Futuro carrito
+items.addEventListener('click', e => {
+    addCarrito(e)
+})
+
+const addCarrito = e => {
+    if (e.target.classList.contains('select-button')) {
+        //para crear el carrito.
+    }
+}
+//Fin futuro carrito
+
+
+//Filtrado por categoria
+const productos = [
+    //aca va el json
+]
+const texto = document.querySelector('#texto')
+const buscar = document.querySelector('#buscar')
+const filtrar = () => {
+    console.log(texto.value)
+    const textoIngresado = texto.value.toLowerCase()
+    for(let producto of productos){
+        let name = producto.name.toLowerCase()
+        if (name.indexOf(textoIngresado) !== -1) {
+            console.log(encontrado);
+        }
+    }
+}
+buscar.addEventListener('click', filtrar)
