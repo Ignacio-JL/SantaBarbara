@@ -19,123 +19,89 @@
 </head>
 <body>
       
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light p-3 nav-bar-sty">
-      <div class="container-fluid">
-        <img src="../assets/marcalogo.png" alt="logo" class="logo-sizing" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./home.html">Inicio</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./products.html">Tienda</a>
-            </li>
+        <div class="container-fluid">
+          <img src="../assets/marcalogo.png" alt="logo" class="logo-sizing" />
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./home.html">Inicio</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./products.html">Tienda</a>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Ayuda
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./infohelp.html#info">Información de envíos</a></li>
-                <li><a class="dropdown-item" href="./infohelp.html#tabla">Tabla de talles</a></li>
-                <li><a class="dropdown-item" href="./infohelp.html#cuidado">Cómo cuidar mi bikini</a></li>
-                <li><a class="dropdown-item" href="./infohelp.html#cambio">Politica de cambios</a></li>
-              </ul>
-            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ayuda
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./infohelp.html#info">Información de envíos</a></li>
+                  <li><a class="dropdown-item" href="./infohelp.html#tabla">Tabla de talles</a></li>
+                  <li><a class="dropdown-item" href="./infohelp.html#cuidado">Cómo cuidar mi bikini</a></li>
+                  <li><a class="dropdown-item" href="./infohelp.html#cambio">Politica de cambios</a></li>
+                </ul>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link">Quienes somos</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link">Quienes somos</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link">Contacto</a>
-            </li>
+              <li class="nav-item">
+                <a class="nav-link">Contacto</a>
+              </li>
 
-          </ul>
-          <form class="d-flex">
-            <button class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
-          </form>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
+            </form>
+          </div>
         </div>
-      </div>
-      <div class="line-divided"></div>
-    </nav>
-
+        <div class="line-divided"></div>
+      </nav>
     
 
     <!--Navegation-->
     <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb mx-5 my-3">
           <li class="breadcrumb-item"><a href="../pages/home.html" class="navegation-sty">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Ayuda</li>
+          <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+          <li class="breadcrumb-item active" aria-current="page">Verano</li>
+          <li class="breadcrumb-item" aria-current="page"><a href="#" class="navegation-sty">Bikinis</a></li>
         </ol>
     </div>
 
-    <!--Info envíos-->
-    <div class="card info-sty">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="../assets/envios.png" class="img-fluid rounded-start img-sty" alt="envios">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" id="info">Información de envíos</h5>
-              <p class="card-text info-sty-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, dignissimos tenetur. Architecto perferendis error illo quia! Consequatur corporis reprehenderit, modi porro, temporibus obcaecati totam qui, ducimus ab aliquam necessitatibus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga, maxime quisquam sapiente pariatur facere officia sit labore delectus commodi, odio voluptate quas atque veniam repellat, at suscipit ipsa expedita.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!--Busqueda-->
+    <div class="container">
+      <input type="text" class="" id="texto">
+      <button class="btn btn-dark" id="buscar">Buscar</button>
+    </div>
 
-    <!--Tabla de talles-->
-    <div class="card info-sty">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" id="tabla">Tabla de talles</h5>
-              <p class="card-text info-sty-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, dignissimos tenetur. Architecto perferendis error illo quia! Consequatur corporis reprehenderit, modi porro, temporibus obcaecati totam qui, ducimus ab aliquam necessitatibus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga, maxime quisquam sapiente pariatur facere officia sit labore delectus commodi, odio voluptate quas atque veniam repellat, at suscipit ipsa expedita.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <img src="../assets/talles.png" class="img-fluid rounded-start img-sty" alt="talles">
-          </div>
-        </div>
-      </div>
-    
-    <!--Cómo cuidar mi bikini-->
-    <div class="card info-sty">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="../assets/bikini.png" class="img-fluid rounded-start img-sty" alt="bikini">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" id="cuidado">Cómo cuidar mi bikin</h5>
-              <p class="card-text info-sty-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, dignissimos tenetur. Architecto perferendis error illo quia! Consequatur corporis reprehenderit, modi porro, temporibus obcaecati totam qui, ducimus ab aliquam necessitatibus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga, maxime quisquam sapiente pariatur facere officia sit labore delectus commodi, odio voluptate quas atque veniam repellat, at suscipit ipsa expedita.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!--Cards-->
+    <div class="container">
+      <h2>Bikinis</h2>
+      <div class="row" id="items"></div>
+    </div>
 
-    <!--Política de cambios-->
-    <div class="card info-sty">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title" id="cambio">Política de cambios</h5>
-              <p class="card-text info-sty-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, dignissimos tenetur. Architecto perferendis error illo quia! Consequatur corporis reprehenderit, modi porro, temporibus obcaecati totam qui, ducimus ab aliquam necessitatibus iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae fuga, maxime quisquam sapiente pariatur facere officia sit labore delectus commodi, odio voluptate quas atque veniam repellat, at suscipit ipsa expedita.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <img src="../assets/cambio.png" class="img-fluid rounded-start img-sty" alt="talles">
+    <template id="template-card">
+      <div class="col-12 mb-2 col-md-4">
+        <div class="card">
+          <img src="" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5>Titulo</h5>
+            <p>Precio</p>
+            <button class="btn btn-dark select-button">Ver más</button>
           </div>
         </div>
       </div>
-    
+    </template>
+
+
     <!--Newsletter-->
     <div class="text-center">
         <!-- Grid container -->
@@ -294,5 +260,7 @@
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+    <!--JavaScript-->
+    <script src="../js/main.js"></script>
 </body>
 </html>
