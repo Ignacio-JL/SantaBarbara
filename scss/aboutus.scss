@@ -1,0 +1,58 @@
+body{
+    .breadcrumbCustom{
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .aboutus-main-img{
+        img{
+            
+            width: 100%;
+            height: 52vh;
+            
+        }
+    }
+    .titleQS{
+        text-align: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .content-about{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        p{
+            margin-top: 2rem;
+        }
+        .content-column-1{
+            width: 100%;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            div{
+                text-align: center;   
+                margin-bottom: 5rem;             
+                img{
+                    width: 50%;
+                }
+            }
+        }
+        .content-column-2{
+            margin-top: 2%;
+            width: 100%;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            .column-2-images{
+                text-align: center;                
+                margin-top: 5rem;
+                div{
+                    img{
+                        width: 40%;
+                    }
+                    img.img-2{
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

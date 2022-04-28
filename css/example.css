@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -7,34 +8,72 @@
   color: red;
   background-color: red; }
 
-body footer .footer-column-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+body footer {
+  font-family: "Inter"; }
+  body footer .footer-column-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  body footer .footer-column-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center; }
+  body footer .footer-right .footer-right-3 {
+    padding: 0; }
+  body footer .footer-right a {
+    text-decoration: none; }
+  body footer .footer-right p {
+    margin-bottom: 5px; }
+  body footer .footer-logo {
+    width: 100%; }
+  body footer .wsppFixed {
+    position: fixed;
+    z-index: 9999;
+    bottom: 1%;
+    right: 3%;
+    width: 11%; }
 
-body footer .footer-column-2 {
+body .breadcrumbCustom {
+  margin-top: 4%;
+  margin-left: 4%; }
+
+body .aboutus-main-img img {
+  width: 100%;
+  height: 52vh; }
+
+body .titleQS {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%; }
+
+body .content-about {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
   align-content: center; }
-  body footer .footer-column-2 i {
-    font-size: 50px; }
-
-body footer .footer-right a {
-  text-decoration: none; }
-
-body footer .footer-right p {
-  margin-bottom: 5px; }
-
-body footer .footer-logo {
-  width: 100%; }
-
-body footer .wsppFixed {
-  position: fixed;
-  z-index: 9999;
-  bottom: 1%;
-  right: 3%;
-  width: 11%; }
+  body .content-about p {
+    margin-top: 2rem; }
+  body .content-about .content-column-1 {
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    body .content-about .content-column-1 div {
+      text-align: center;
+      margin-bottom: 5rem; }
+      body .content-about .content-column-1 div img {
+        width: 50%; }
+  body .content-about .content-column-2 {
+    margin-top: 2%;
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    body .content-about .content-column-2 .column-2-images {
+      text-align: center;
+      margin-top: 5rem; }
+      body .content-about .content-column-2 .column-2-images div img {
+        width: 40%; }
+      body .content-about .content-column-2 .column-2-images div img.img-2 {
+        margin-top: 1rem; }
 
 body {
   position: relative;
