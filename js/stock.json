@@ -1,0 +1,267 @@
+[
+    {
+        "id": 1,
+        "image": ["/assets/products/aro_cebra_1.jpg", "/assets/products/aro_cebra_2.jpg", "/assets/products/aro_cebra_3.jpg"],
+        "season": 21,
+        "size": 3,
+        "name": "aro cebra",
+        "type": "bikini",
+        "price": 5700,
+        "description": "¿Por qué lo elegirías? Por su comodidad. Porque es un molde clásico con una estampa con mucho rock. Corpiño: de aro, con recortes en las copas, breteles finos regulables con espalda para atar. Bombacha: colaless con costura embolsada. ¡No marca nada! Está confeccionada en lycra estampada premium. Se vende en conjunto."
+    },
+     
+    {
+        "id": 2,
+        "image": ["/assets/products/bali_mostaza_1.jpg","/assets/products/bali_mostaza_2.jpg","/assets/products/bali_mostaza_3.jpg"],
+        "season": 20,
+        "size": 2,
+        "name": "bali mostaza",
+        "type": "bikini",
+        "price": 5300,
+        "description": "Bikini de color mostaza con brillos dorados. Corpiño: para atar en la parte delantera. Bombacha: vedetina."
+    },
+     
+    {
+        "id": 3,
+        "image": ["/assets/products/bali_red_1.jpg","/assets/products/bali_red_2.jpg","/assets/products/bali_red_3.jpg"],
+        "season": 20,
+        "size": 1,
+        "name": "bali red",
+        "type": "bikini",
+        "price": 5300,
+        "description": "Bikini de color rojo. Corpiño: para atar en la parte delantera. Bombacha: vedetina."
+    },
+     
+    {
+        "id": 4,
+        "image": ["/assets/products/china_flowers_1.jpg","/assets/products/china_flowers_2.jpg","/assets/products/china_flowers_3.jpg"],
+        "season": 20,
+        "size": 1,
+        "name": "china flower",
+        "type": "bikini",
+        "price": 5200,
+        "description": "Bikini estampada. Corpiño: triangulito con breteles negros ajustables. Bombacha: semivedetina tambien con breteles negros ajustables"
+    },
+     
+    {
+        "id": 5,
+        "image": ["/assets/products/emma_black_1.jpg", "/assets/products/emma_black_2.jpg","/assets/products/emma_black_3.jpg"],
+        "season": 20,
+        "size": 2,
+        "name": "emma black",
+        "type": "bikini",
+        "price": 5300,
+        "description": "Bikini negra con accesorio central y tiras desmontables, podes atarla como mas te guste. La bombacha de esta bikini es más chica que la contextura normal. Calcular un talle más a la hora de comprar."
+    },
+     
+    {
+        "id": 6,
+        "image": ["/assets/products/emma_mineral_1.jpg", "/assets/products/emma_mineral_2.jpg", "/assets/products/emma_mineral_3.jpg"],
+        "season": 20,
+        "size": 2,
+        "name": "emma mineral",
+        "type": "bikini",
+        "price": 5300,
+        "description": "Bikini plateada brillosa con accesorio central desmontable. Corpiño: con tiras regulables. Bombacha: vedetina. Esta bikini es más chica que la contextura normal. Calcular un talle más a la hora de comprar."
+    },
+    
+    {
+        "id": 7,
+        "image": ["/assets/products/fiji_lurex_negra_1.jpg","/assets/products/fiji_lurex_negra_2.jpg","/assets/products/fiji_lurex_negra_3.jpg"],
+        "season": 21,
+        "size": 1,
+        "name": "fiji lurex negra",
+        "type": "bikini",
+        "price": 5600,
+        "description": "¿Por qué lo elegirías? Porque el triangulito es ideal para broncearse. Se adapta a cualquier cuerpo gracias a sus tiritas. Aparte de ser un molde clásico tiene una tela única. Corpiño: con tiritas para atar, triángulo clásico. Bombacha: colaless con tiras para atar. Confeccionada en lycra negra de lurex brillante. Se vende en conjunto."
+    },
+    
+    {
+        "id": 8,
+        "image": ["/assets/products/geminis_nude_1.jpg","/assets/products/geminis_nude_2.jpg","/assets/products/geminis_nude_3.jpg"],
+        "season": 21,
+        "size": 2,
+        "name": "geminis nude",
+        "type": "bikini",
+        "price": 5700,
+        "description": "Podés usar esta bikini de dos maneras: cruzada en el frente o con las tiras de forma recta. ¿Por qué lo elegirías? Porque es un clásico aunque un poco más atrevido. Porque al atarse se adapta a todos los cuerpos. Porque el nude combinado con el salmón hacen que, probablemente, te lleves todas las miradas. Corpiño: Triángulo con escote halter con coleta para atar. Costura embolsada. Tira espaguetti para atar en el bajo busto con bolsillo. Bolsillo con posibilidad para agregar relleno. Bombacha: Estilo brasilera con tiras para atar y fruncido adaptable al tamaño de la bombacha que busques. Lycra lisa color nude y salmón en tiras. Se vende en conjunto"
+    },
+    
+    {
+        "id": 9,
+        "image": ["/assets/products/genova_red_1.jpg","/assets/products/genova_red_2.jpg","/assets/products/genova_red_3.jpg"],
+        "season": 20,
+        "size": 1,
+        "name": "genova red",
+        "type": "bikini",
+        "price": 5400,
+        "description": "Bikini con tela frunce roja. Un solo hombro y argollas en bombacha y corpiño. Bombacha semivedetina."
+    },
+     
+    {
+        "id": 10,
+        "image": ["/assets/products/maui_black_1.jpg","/assets/products/maui_black_2.jpg","/assets/products/maui_black_3.jpg"],
+        "season": 20,
+        "size": 1,
+        "name": "maui black",
+        "type": "bikini",
+        "price": 5300,
+        "description": "Bikini con espalda cruzada y para atar. Bombacha: semivedetina con tiras regulables. Apto para tazas desmontables."
+    },
+    
+    {
+        "id": 11,
+        "image": ["/assets/products/maui_flowers_1.jpg","/assets/products/maui_flowers_2.jpg","/assets/products/maui_flowers_3.jpg"],
+        "season": 20,
+        "size": [1, 2],
+        "name": "maui flowers",
+        "type": "bikini",
+        "price": 5300,
+        "description": "Bikini con espalda cruzada y para atar. Bombacha: semivedetina con tiras regulables. Apto para tazas desmontables."
+    },
+    
+    {
+        "id": 13,
+        "image": ["/assets/products/trini_black_1.jpg","/assets/products/trini_black_2.jpg"],
+        "season": 20,
+        "size": 2,
+        "name": "trini black",
+        "type": "bikini",
+        "price": 5250,
+        "description": "Bikini negra con tiras desmontables, podes atarla como mas te guste. La bombacha de esta bikini es más chica que la contextura normal. Calcular un talle más a la hora de comprar."
+    },
+    
+    {
+        "id": 14,
+        "image": ["/assets/products/venus_morley_bordo_1.jpg","/assets/products/venus_morley_bordo_2.jpg","/assets/products/venus_morley_bordo_3.jpg"],
+        "season": 21,
+        "size": 3,
+        "name": "venus morley bordo",
+        "type": "bikini",
+        "price": 5650,
+        "description": "Este modelo nunca pasa de moda. ¿Por qué lo elegirías? Por su comodidad. Porque es un clásico rockero gracias a su lycra engomada premium. Corpiño: top con escote recto y tiras fijas con dados cuadrados niquel. Bombacha: Estilo semi vedetina embolsada con cuadrados de niquel. Confeccionada en lycra de morley premium. Se vende en conjunto."
+    },
+    
+    {
+        "id": 15,
+        "image": ["/assets/products/dakota_nude_1.jpg","/assets/products/dakota_nude_2.jpg","/assets/products/dakota_nude_3.jpg"],
+        "season": 21,
+        "size": [1, 3],
+        "name": "dakota nude",
+        "type": "enteriza",
+        "price": 6550,
+        "description": "Entero de un hombro con recorte asimétrico en la cintura confeccionado en lycra premium en color nude y blanco."
+    },
+    
+    {
+        "id": 17,
+        "image": ["/assets/products/dakota_rayada_1.jpg","/assets/products/dakota_rayada_2.jpg","/assets/products/dakota_rayada_3.jpg"],
+        "season": 21,
+        "size": [1, 3],
+        "name": "dakota rayada",
+        "type": "enteriza",
+        "price": 6550,
+        "description": "Entero de un hombro con recorte asimétrico en la cintura (lado izquierdo). La parte superior del entero asimila a un top strapless pero con un hombro. Combinación de lycras premium en estampada rayada (azul y blanco) y lisa blanca."
+    },
+    
+    {
+        "id": 19,
+        "image": ["/assets/products/dalia_manchas_1.jpg","/assets/products/dalia_manchas_2.jpg","/assets/products/dalia_manchas_3.jpg"],
+        "season": 21,
+        "size": 1,
+        "name": "dalia manchas",
+        "type": "enteriza",
+        "price": 6300,
+        "description": "En los costados tiene un fruncido que permite que se adapte a tu cuerpo y favorezca tu figura. ¿Por qué lo elegirías? Porque es un must para usar tanto en la playa como para salir. Porque es super cómoda. Porque tiene un estampado exclusivo. Escote: Recto. Espalda: Recta con tiras regulables. Bombacha: Vedetina. Lycra premium texturizada con estampa exclusiva. Se vende en conjunto."
+    },
+    
+    {
+        "id": 20,
+        "image": ["/assets/products/kate_red_1.jpg","/assets/products/kate_red_2.jpg","/assets/products/kate_red_3.jpg"],
+        "season": 20,
+        "size": 2,
+        "name": "kate red",
+        "type": "enteriza",
+        "price": 6200,
+        "description": "Enteriza roja con corte al costado, un solo hombro con tira ajustable."
+    },
+    
+    {
+        "id": 21,
+        "image": ["/assets/products/india_black_1.jpg","/assets/products/india_black_2.jpg","/assets/products/india_black_3.jpg"],
+        "season": 20,
+        "size": 1,
+        "name": "india black",
+        "type": "enteriza",
+        "price": 6050,
+        "description": "Entera súper fina con escote cuadrado y tiras regulables. Espalda baja y descubierta"
+    },
+    
+    {
+        "id": 22,
+        "image": ["/assets/products/dalia_negro_1.jpg","/assets/products/dalia_negro_2.jpg","/assets/products/dalia_negro_3.jpg"],
+        "season": 21,
+        "size": 1,
+        "name": "dalia negro",
+        "type": "enteriza",
+        "price": 6300,
+        "description": "En los costados tiene un fruncido que permite que se adapte a tu cuerpo y favorezca tu figura. ¿Por qué lo elegirías? Porque es un must para usar tanto en la playa como para salir. Porque es super cómoda. Porque tiene un estampado exclusivo. Escote: Recto. Espalda: Recta con tiras regulables. Bombacha: Vedetina. Lycra premium texturizada con estampa exclusiva. Se vende en conjunto."
+    },
+    
+    {
+        "id": 23,
+        "image": ["/assets/products/positano_red_1.jpg","/assets/products/positano_red_2.jpg"],
+        "season": 20,
+        "size": 2,
+        "name": "positano red",
+        "type": "enteriza",
+        "price": 6100,
+        "description": "Enteriza roja con escote y espalda con tiras para atar. Bombacha: Vedetina."
+    },
+    
+    {
+        "id": 24,
+        "image": ["/assets/products/conjunto_simplicity_negro_1.jpg","/assets/products/conjunto_simplicity_negro_2.jpg","/assets/products/conjunto_simplicity_negro_3.jpg"],
+        "season": 0,
+        "size": "Único",
+        "name": "buzo simplicity negro",
+        "type": "comfy",
+        "price": 7300,
+        "description": "Conjunto confeccionado en algodón rústico. Buzo con capucha, bordado a tono con la palabra SIMPLICITY, oversize."
+    },
+    
+    {
+        "id": 25,
+        "image": ["/assets/products/conjunto_simplicity_negro_1.jpg","/assets/products/conjunto_simplicity_negro_2.jpg","/assets/products/conjunto_simplicity_negro_3.jpg"],
+        "season": 0,
+        "size": "Único",
+        "name": "conjunto simplicity negro",
+        "type": "comfy",
+        "price": 8950,
+        "description": "Conjunto confeccionado en algodón rústico. Buzo con capucha, bordado a tono con la palabra SIMPLICITY. Short y buzo oversize. Cómodo, práctico e ideal para usar en cualquier situación."
+    },
+    
+    
+    {
+        "id": 26,
+        "image": ["/assets/products/conjunto_unique_verde_1.jpg","/assets/products/conjunto_unique_verde_2.jpg","/assets/products/conjunto_unique_verde_3.jpg"],
+        "season": 0,
+        "size": "Único",
+        "name": "conjunto unique verde",
+        "type": "comfy",
+        "price": 8950,
+        "description": "Conjunto confeccionado en algodón rústico. Buzo con capucha, bordado a tono con la palabra UNIQUE. Short y buzo oversize. Cómodo, práctico e ideal para usar en cualquier situación."
+    },
+    
+    {
+        "id": 27,
+        "image": ["/assets/products/conjunto_dreamer_arena_1.jpg","/assets/products/conjunto_dreamer_arena_2.jpg","/assets/products/conjunto_dreamer_arena_3.jpg"],
+        "season": 0,
+        "size": "Único",
+        "name": "conjunto dreamer arena",
+        "type": "comfy",
+        "price": 8950,
+        "description": "Conjunto confeccionado en algodón rústico. Buzo con capucha, bordado a tono con la palabra DREAMER. Short y buzo oversize. Cómodo, práctico e ideal para usar en cualquier situación."
+    }
+    
+]
