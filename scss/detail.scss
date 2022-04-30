@@ -1,0 +1,61 @@
+body{
+    .detail-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 1fr;
+        row-gap: 20px;
+        column-gap: 45px;
+        .detail-info{
+            .absoluteAux{position: absolute; height: 100%;}
+            font-family: $tipografiaPrincipal;
+            h3, button{font-family: $tipografiaSecundaria;}
+            h6{
+                font-style: italic;
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 27px;
+                color: #959595;
+            }
+            h2{
+                color: $colorTerciario;
+                font-weight: 800;
+                font-size: 35px;
+                line-height: 43px;
+            }
+            h3{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                color: #CCCCCC;
+                margin-top: 1rem;
+            }
+            p{
+                color: #CCCCCC;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                margin-top: 2rem;
+            }
+            button{
+                position: relative;
+                bottom: 14rem;
+                color: white;
+                width: 181px;
+                height: 45px;
+                border-radius: 5px;
+                background: $colorTerciario;
+            }
+        }
+        .detail-images{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .detail-images-container{
+                width: 30%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

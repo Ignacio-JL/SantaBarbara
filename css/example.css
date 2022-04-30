@@ -250,6 +250,59 @@ body footer .wsppFixed {
   width: 100%;
   height: 100%; }
 
+body .detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  row-gap: 20px;
+  column-gap: 45px; }
+  body .detail-grid .detail-info {
+    font-family: "Montserrat"; }
+    body .detail-grid .detail-info .absoluteAux {
+      position: absolute;
+      height: 100%; }
+    body .detail-grid .detail-info h3, body .detail-grid .detail-info button {
+      font-family: "Nunito"; }
+    body .detail-grid .detail-info h6 {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 27px;
+      color: #959595; }
+    body .detail-grid .detail-info h2 {
+      color: #FE336D;
+      font-weight: 800;
+      font-size: 35px;
+      line-height: 43px; }
+    body .detail-grid .detail-info h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      color: #CCCCCC;
+      margin-top: 1rem; }
+    body .detail-grid .detail-info p {
+      color: #CCCCCC;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 2rem; }
+    body .detail-grid .detail-info button {
+      position: relative;
+      bottom: 14rem;
+      color: white;
+      width: 181px;
+      height: 45px;
+      border-radius: 5px;
+      background: #FE336D; }
+  body .detail-grid .detail-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body .detail-grid .detail-images .detail-images-container {
+      width: 30%; }
+      body .detail-grid .detail-images .detail-images-container img {
+        width: 100%; }
+
 body {
   position: relative;
   max-width: 100%;
