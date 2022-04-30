@@ -21,49 +21,51 @@
       
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light p-3 nav-bar-sty">
-        <div class="container-fluid">
-          <img src="../assets/marcalogo.png" alt="logo" class="logo-sizing" />
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0 text-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./home.html">Inicio</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./products.html">Tienda</a>
-              </li>
+      <div class="container-fluid">
+        <img src="../assets/marcalogo.png" alt="logo" class="px-5" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./products.html">Tienda</a>
+            </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Ayuda
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./infohelp.html#info">Información de envíos</a></li>
-                  <li><a class="dropdown-item" href="./infohelp.html#tabla">Tabla de talles</a></li>
-                  <li><a class="dropdown-item" href="./infohelp.html#cuidado">Cómo cuidar mi bikini</a></li>
-                  <li><a class="dropdown-item" href="./infohelp.html#cambio">Politica de cambios</a></li>
-                </ul>
-              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ayuda
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./infohelp.html#info">Información de envíos</a></li>
+                <li><a class="dropdown-item" href="./infohelp.html#tabla">Tabla de talles</a></li>
+                <li><a class="dropdown-item" href="./infohelp.html#cuidado">Cómo cuidar mi bikini</a></li>
+                <li><a class="dropdown-item" href="./infohelp.html#cambio">Politica de cambios</a></li>
+              </ul>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link">Quienes somos</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link">Quienes somos</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link">Contacto</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link">Contacto</a>
+            </li>
 
-            </ul>
-            <form class="d-flex">
-              <button class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
-            </form>
-          </div>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
+          </form>
         </div>
-        <div class="line-divided"></div>
-      </nav>
+        
+      </div>
+    </nav>
+    <div class="line-divided"></div>
+
     
 
     <!--Navegation-->
@@ -102,35 +104,27 @@
     </template>
 
 
-    <!--Newsletter-->
+  <!--Footer-->
+  <footer class="text-center pt-5">
+    <!-- Newsletter-->
     <div class="text-center">
-        <!-- Grid container -->
         <div class="container p-4">
-    
-          <!-- Section: Form -->
           <section class="">
             <form action="">
               <div class="row newsl-sty">
-
                   <div class="newsl-sty-1">
-                      <p>
-                          <strong>Suscribite al Newsletter</strong>
-                      </p>
-                      <p class="m-0"> Para recibir ofertas y</p>
-                      <p class="m-0"> novedades en tu mail</p>
+                      <p class="m-0 p-0"><strong>SUSCRIBITE AL NEWSLETTER</strong></p>
+                      <p class="m-0">Para recibir ofertas y novedades en tu mail</p>
                   </div>
 
-                  <div class="newsl-sty-2"> 
-                      <img src="https://img.icons8.com/ios/000000/mail.png"/>
+                  <div class="newsl-sty-2 text-center"> 
+                      <img src="../assets/mail.png"/>
                   </div>
                   
                   <div class="newsl-sty-3">
-                      <div class="form-outline mb-4">
-                          <input type="email" id="form5Example2" class="form-control" placeholder="Ingresa tu mail" />
-                          <!-- Submit button 
-                            <button type="submit" class="btn btn-secondary mb-4">
-                                Subscribe
-                            </button> -->
+                      <div class="form-outline mb-4 d-flex flex-row">
+                          <input type="email" id="form5Example2" class="form-control newsl-sty-3-mailbox" placeholder="Ingresa tu mail">
+                          <input type="button" class="btn newsl-sty-button px-2" value="Enviar">
                       </div>
                   </div>
               </div>
@@ -141,121 +135,87 @@
     
     </div>
 
-    <hr>
 
-    <!--Footer-->
-    <footer class="text-center">
+    <!--Adorno de Ola-->
+    <div class="ola-divided py-4">
+      <img src="../assets/olaOscuro.png" class="w-100" alt="ola">
+    </div>
+
     
-        <!-- Section: Links  -->
+    <!--Footer-->
         <section class="">
         <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-            <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-2 footer-column-1">
-                <!-- Content -->
-                <div>
-                    <img src="../assets/sb-logo.png" alt="" class="footer-logo">
-                </div>
-                <div>
-                    <p class="text-reset">
-                        BIKINIS & MORE DE TUCUMAN, AR SHOP ONLINE
-                    </p>
-                </div>
-            </div>
-            <!-- Grid column -->
-            <div class="col-md-4 footer-column-2">
-                <!-- Content -->
-                <i class="fa-brands fa-facebook fb"></i>
-                <i class="fa-brands fa-instagram insta"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-            </div>
+            
+          <div class="row mt-3">
+              <!--Logo y nombre-->
+              <div class="col-md-2 col-sm-6 footer-column-1">
+                  <div class="footer-column-1-logo">
+                      <img src="../assets/marcalogo.png" alt="" class="footer-logo p-2">
+                  </div>
+                  <div>
+                      <p class="text-reset text-center">
+                          BIKINIS & MORE DE TUCUMAN, AR SHOP ONLINE
+                      </p>
+                  </div>
+              </div>
+              
+              <!--Redes-->
+              <div class="col-md-4 col-sm-6 footer-column-2"> 
+                  <img src="../assets/whats.png" alt="">
+                  <img src="../assets/insta.png" alt="">
+                  <img src="../assets/face.png" alt="">                 
+              </div>
 
-            <div class="col-md-6 footer-right">
-                <div class="container">
+              <div class="col-md-6 footer-right">
+                <div class="container text-center">
                     <div class="row">
-                        <!-- Grid column -->
-                        <div class="col-md-3">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                            Tienda
-                            </h6>
-                            <p>
-                            <a href="#!" class="text-reset">BIKINIS</a>
-                            </p>
-                            <p>
-                            <a href="#!" class="text-reset">ENTERAS</a>
-                            </p>
-                            <p>
-                            <a href="#!" class="text-reset">CONJUNTOS</a>
-                            </p>
-                            <p>
-                            <a href="#!" class="text-reset">BUZOS</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                
-                        <!-- Grid column -->
-                        <div class="col-md-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                            Ayuda
-                            </h6>
-                            <p>
-                            <a href="#!" class="text-reset">INFORMACIÓN DE LOS ENVIOS</a>
-                            </p>
-                            <p>
-                            <a href="#!" class="text-reset">TABLA DE TALLES</a>
-                            </p>
-                            <p>
-                            <a href="#!" class="text-reset">POLITICA DE CAMBIOS</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                
-                        <!-- Grid column -->
-                        <div class="col-md-2">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                            Quienes Somos
-                            </h6>
-                            
-                        </div>
-                        <!-- Grid column -->
-        
-                        <!-- Grid column -->
-                        <div class="col-md-3">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                            Contacto
-                            </h6>
-                            <p>
-                            <a href="#!" class="text-reset">ESCRIBINOS</a>
-                            </p>
-                            <p>
-                            <a href="#!" class="text-reset">SEGUINOS</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
 
+                      <!--Tienda-->
+                        <div class="col-md-3 col-sm-6 mt-3">
+                            <h6 class="text-uppercase fw-bold mb-2">Tienda</h6>
+                            <p><a href="#!" class="text-reset">BIKINIS</a></p>
+                            <p><a href="#!" class="text-reset">ENTERAS</a></p>
+                            <p><a href="#!" class="text-reset">CONJUNTOS</a> </p>
+                            <p><a href="#!" class="text-reset">BUZOS</a></p>
+                        </div>
+                        
+                        <!--Ayuda--> 
+                        <div class="col-md-4 col-sm-6 mt-3">
+                            <h6 class="text-uppercase fw-bold mb-2">Ayuda</h6>
+                            <p><a href="#!" class="text-reset">INFORMACIÓN DE LOS ENVIOS</a></p>
+                            <p><a href="#!" class="text-reset">TABLA DE TALLES</a></p>
+                            <p><a href="#!" class="text-reset">POLITICA DE CAMBIOS</a></p>
+                        </div>
+                        
+                        <!--Quienes somos-->
+                        <div class="col-md-2 col-sm-6 mt-3">
+                            <h6 class="text-uppercase fw-bold mb-2">Quienes Somos</h6>
+                        </div>
+                      
+                        <!--Contacto-->
+                        <div class="col-md-3 col-sm-6 mt-3">
+                            <h6 class="text-uppercase fw-bold mb-2">Contacto</h6>
+                            <p><a href="#!" class="text-reset">ESCRIBINOS</a></p>
+                            <p><a href="#!" class="text-reset">SEGUINOS</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-
+    
             </div>
-            <!-- Grid row -->
+            
         </div>           
         </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        
+    
+        
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
             BY SANTA BARBARA
         </div>
 
-        <!-- WhatsApp -->
-        <a><img src="../assets/Whatsapp-Logo-PNG.png" alt="Whatsapp-Logo-PNG" class="wsppFixed"></a>
-    </footer>
+        
+        <a><img src="../assets/whats1.png" alt="Whatsapp-Logo-PNG" class="wsppFixed"></a>
+  </footer>
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

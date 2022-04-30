@@ -1,5 +1,8 @@
 body{
     footer{
+        color: $colorRosaOscuro;
+        background-color: $colorRosaClaro;
+
         .footer-column-1{
             display: flex;
             flex-direction: column;
@@ -28,10 +31,67 @@ body{
         .wsppFixed{
             position: fixed;
             z-index: 9999;
-            bottom: 1%;
+            bottom: 3%;
             right: 3%;
-            width: 11%;
-            
+            width: 5%;   
+        }
+    }
+}
+
+
+.newsl-sty{
+    display: grid;
+    grid-template-columns: 30% 15% 55%;
+    grid-template-rows: 100%;
+    grid-template-areas: "one  two  three";
+
+    &-1{
+        grid-area: one;
+        justify-content: center;
+    }
+    &-2{
+        grid-area: two;
+        width: 80%;
+        height: 80%;
+        text-align: center;
+    }
+    &-3{
+        grid-area: three;
+        &-mailbox{
+            border-radius: 1rem 0 0 1rem;
+        }
+    }
+
+    &-button{
+        background: $colorRosaOscuro;
+        border-radius: 0 1rem 1rem 0;
+        border: none;
+        font-family: $tipografiaSecundaria;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        text-align: center;
+        color: $colorBlanco;
+        &:hover{
+            color: white;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .newsl-sty{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "two   one"
+                             "three three";
+        &-1{
+            font-size: 0.7rem;
+        }
+
+        &-3{
+            padding: 0.5rem;
         }
     }
 }

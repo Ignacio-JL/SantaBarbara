@@ -1,0 +1,136 @@
+.nav-bar-sty{
+    position: sticky;
+    background: $colorBlanco;
+    z-index: 99;
+}
+
+.line-divided{
+    height: 0.5rem;
+    background-color: $colorRosaClaro;
+}
+
+
+
+//Imagen principal y sus agregados
+.carrusel{
+    &-title{
+        position: absolute;
+        width: 25rem;
+        height: 8rem;
+        left: 5rem;
+        top: 11rem;
+        font-family: $tipografiaPrincipal;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.5rem;
+        line-height: 4rem;
+        color: $colorBlanco;
+    }
+    &-text{
+        position: absolute;
+        width: 3.7rem;
+        height: 1.6rem;
+        left: 5rem;
+        top: 9rem;
+        font-family: $tipografiaSecundaria;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+        color: $colorBlanco;
+    }
+    &-boton{
+        position: absolute;
+        width: 8rem;
+        height: 3rem;
+        left: 5rem;
+        top: 21rem;
+        background: $colorRosaOscuro;
+        border-radius: 0.5rem;
+        border: none;
+        font-family: $tipografiaSecundaria;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        text-align: center;
+        color: $colorBlanco;
+    }
+    &-onda{
+        position: absolute;
+        left: 1.4rem;
+        right: 1rem;
+        top: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .carrusel{
+        &-title{
+            width: 6rem;
+            height: 2rem;
+            left: 2rem;
+            top: 3.5rem;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        &-text{
+            width: 1.8rem;
+            height: 1.6rem;
+            left: 2rem;
+            top: 2.5rem;
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+        }
+        &-boton{
+            width: 3rem;
+            height: 1.3rem;
+            left: 2rem;
+            top: 7rem;
+            font-size: 0.5rem;
+            line-height: 0.8rem;
+        }
+        &-onda{
+            width: 0.6rem;
+            left: 0.5rem;
+            right: 0.4rem;
+            top: 0.6rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .carrusel{
+        &-title{
+            width: 12rem;
+            height: 4rem;
+            left: 4rem;
+            top: 5rem;
+            font-size: 2rem;
+            line-height: 1.7rem;
+        }
+        &-text{
+            width: 1.8rem;
+            height: 1.6rem;
+            left: 4rem;
+            top: 4rem;
+            font-size: 0.8rem;
+            line-height: 0.8rem;
+        }
+        &-boton{
+            width: 3rem;
+            height: 1.3rem;
+            left: 4rem;
+            top: 9rem;
+            font-size: 0.5rem;
+            line-height: 0.8rem;
+        }
+        &-onda{
+            width: 1rem;
+            left: 0.5rem;
+            right: 0.4rem;
+            top: 0.3rem;
+        }
+    }
+}
+
