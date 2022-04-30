@@ -84,7 +84,7 @@
     width: 3rem;
     height: 1.3rem;
     left: 2rem;
-    top: 7rem;
+    top: 2rem;
     font-size: 0.5rem;
     line-height: 0.8rem; }
   .carrusel-onda {
@@ -98,21 +98,21 @@
     width: 12rem;
     height: 4rem;
     left: 4rem;
-    top: 5rem;
-    font-size: 2rem;
+    top: 4.2rem;
+    font-size: 1.7rem;
     line-height: 1.7rem; }
   .carrusel-text {
     width: 1.8rem;
     height: 1.6rem;
     left: 4rem;
-    top: 4rem;
-    font-size: 0.8rem;
+    top: 3.4rem;
+    font-size: 0.5rem;
     line-height: 0.8rem; }
   .carrusel-boton {
     width: 3rem;
     height: 1.3rem;
     left: 4rem;
-    top: 9rem;
+    top: 8rem;
     font-size: 0.5rem;
     line-height: 0.8rem; }
   .carrusel-onda {
@@ -123,7 +123,9 @@
 
 body footer {
   color: #FE336D;
-  background-color: #FE98B5; }
+  background-color: rgba(254, 152, 181, 0.5);
+  font-family: "Montserrat";
+  font-size: 0.9rem; }
   body footer .footer-column-1 {
     display: flex;
     flex-direction: column;
@@ -133,8 +135,6 @@ body footer {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: center; }
-    body footer .footer-column-2 i {
-      font-size: 50px; }
   body footer .footer-right a {
     text-decoration: none; }
   body footer .footer-right p {
@@ -144,9 +144,12 @@ body footer {
   body footer .wsppFixed {
     position: fixed;
     z-index: 9999;
-    bottom: 3%;
-    right: 3%;
-    width: 5%; }
+    bottom: 6%;
+    right: 6%;
+    width: 8%; }
+  @media only screen and (max-width: 500px) {
+    body footer .footer-logo {
+      width: 50%; } }
 
 .newsl-sty {
   display: grid;
@@ -198,7 +201,7 @@ body footer {
   grid-template-areas: "title title title title" "categ1 categ2 categ3 categ4"; }
   .category-title, .productdest-title {
     position: absolute;
-    left: 5rem;
+    left: 3rem;
     grid-area: title;
     font-family: "Nunito";
     font-style: normal;
@@ -211,29 +214,41 @@ body footer {
     grid-area: categ1;
     text-align: center; }
     .category-img-1:hover {
-      filter: saturate(8); }
+      filter: saturate(2); }
   .category-img-2 {
     grid-area: categ2;
     text-align: center; }
     .category-img-2:hover {
-      filter: saturate(8); }
+      filter: saturate(2); }
   .category-img-3 {
     grid-area: categ3;
     text-align: center; }
     .category-img-3:hover {
-      filter: saturate(8); }
+      filter: saturate(2); }
   .category-img-4 {
     grid-area: categ4;
     text-align: center; }
     .category-img-4:hover {
-      filter: saturate(8); }
+      filter: saturate(2); }
 
 @media only screen and (max-width: 1000px) {
   .category, .productdest {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10% 45% 45%;
-    grid-template-areas: "title title" "categ1 categ2" "categ3 categ4"; } }
+    grid-template-areas: "title title" "categ1 categ2" "categ3 categ4"; }
+    .category-img-1 {
+      width: 7rem;
+      height: 6rem; }
+    .category-img-2 {
+      width: 7rem;
+      height: 6rem; }
+    .category-img-3 {
+      width: 7rem;
+      height: 6rem; }
+    .category-img-4 {
+      width: 7rem;
+      height: 6rem; } }
 
 .ola-divided {
   text-align: center; }
@@ -268,18 +283,29 @@ body footer {
 .boxinfo {
   height: auto;
   text-align: center;
-  border: 0.1rem solid #959595;
-  border-radius: 0.5rem;
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 100%;
-  grid-template-areas: "pagos fdeliv deliv"; }
+  grid-template-rows: 60% 40%;
+  grid-template-areas: "pagos fdeliv deliv" "pagostext fdelivtext delivtext"; }
   .boxinfo-pagos {
-    grid-area: pagos; }
+    grid-area: pagos;
+    position: relative;
+    top: 15%; }
   .boxinfo-fastdeliv {
     grid-area: fdeliv; }
   .boxinfo-deliv {
-    grid-area: deliv; }
+    grid-area: deliv;
+    position: relative;
+    top: 5%; }
+  .boxinfo-pagostext {
+    grid-area: pagostext; }
+  .boxinfo-fdelivtext {
+    grid-area: fdelivtext; }
+  .boxinfo-delivtext {
+    grid-area: delivtext; }
+  .boxinfo p {
+    color: #959595;
+    font-family: "Nunito"; }
 
 .info-sty {
   max-width: 100%;

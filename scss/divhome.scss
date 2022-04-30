@@ -10,7 +10,7 @@
     
     &-title{
         position: absolute;
-        left: 5rem;
+        left: 3rem;
         grid-area: title;
         font-family: $tipografiaSecundaria;
         font-style: normal;
@@ -24,28 +24,28 @@
         grid-area: categ1;
         text-align: center;
         &:hover{
-            filter: saturate(8);
+            filter: saturate(2);
         }
     }
     &-img-2{
         grid-area: categ2;
         text-align: center;
         &:hover{
-            filter: saturate(8);
+            filter: saturate(2);
         }
     }
     &-img-3{
         grid-area: categ3;
         text-align: center;
         &:hover{
-            filter: saturate(8);
+            filter: saturate(2);
         }
     }
     &-img-4{
         grid-area: categ4;
         text-align: center;
         &:hover{
-            filter: saturate(8);
+            filter: saturate(2);
         }
     }
 }
@@ -59,6 +59,23 @@
         grid-template-areas: "title title"
                             "categ1 categ2"
                             "categ3 categ4";
+
+        &-img-1{
+            width: 7rem;
+            height: 6rem;
+        }
+        &-img-2{
+            width: 7rem;
+            height: 6rem;
+        }
+        &-img-3{
+            width: 7rem;
+            height: 6rem;
+        }
+        &-img-4{
+            width: 7rem;
+            height: 6rem;
+        }
     }
 }
 
@@ -113,21 +130,37 @@
 .boxinfo{
     height: auto;
     text-align: center;
-    border: 0.1rem solid $colorGris;
-    border-radius: 0.5rem;
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 100%;
-    grid-template-areas: "pagos fdeliv deliv";
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "pagos fdeliv deliv"
+                        "pagostext fdelivtext delivtext";
 
     &-pagos{
         grid-area: pagos;
+        position: relative;
+        top: 15%;
     }
     &-fastdeliv{
         grid-area: fdeliv;
     }
     &-deliv{
         grid-area: deliv;
+        position: relative;
+        top: 5%;
+    }
+    &-pagostext{
+        grid-area: pagostext;
+    }
+    &-fdelivtext{
+        grid-area: fdelivtext;
+    }
+    &-delivtext{
+        grid-area: delivtext;
+    }
+    p{
+        color: $colorGris;
+        font-family: $tipografiaSecundaria;
     }
 }
 
