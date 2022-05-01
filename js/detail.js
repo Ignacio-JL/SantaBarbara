@@ -9,7 +9,7 @@ fetch(url)
         let productId = paramaterId.get('id');
         let product = result.find(p => p.id === parseInt(productId));
         showDetail(product);
-
+        showMoreProducts(result);
         
     })
     .catch((error) => console.log(error));
@@ -89,4 +89,31 @@ fetch(url)
         }
         
         document.getElementById('selection-1').style.border = '3px solid #FE336D'
+    }
+
+    function showMoreProducts(prod){
+        // Generamos orden aleatorio
+        prod.sort(()=>{return Math.random()-0.5});
+
+        let swipperContent = document.querySelector('#swipper-content');
+        swipperContent.innerHTML ='';
+        let nodo = '';
+        prod.forEach(p => {
+            nodo +=`
+            
+                <div class="swiper-slide">
+                    <div class="swipper-content">
+                    <img src="${p.image[0]}" class="d-block w-100" alt="">
+                        <h4>${p.price}</h3>
+                        <h5>${p.name}</h5>
+                        <h6>${p.type}</h6>
+                        <div><a href="/pages/detail.html?id=${p.id}">Ver más</a></div>
+                    </div>
+                </div>
+            
+            
+            `
+        });
+
+        swipperContent.innerHTML = nodo;   
     }

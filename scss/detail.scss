@@ -1,8 +1,10 @@
 body{
 
     .swiper {
-        width: 100%;
+        width: auto !important;
         height: 100%;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 
     .swiper-slide {
@@ -30,6 +32,16 @@ body{
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    // color flecha
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        color: $colorTerciario;
+        font-size: 1.5rem;
+    }
+    // background boton
+    .swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
     }
 
     // fin swipper
@@ -124,7 +136,7 @@ body{
     }
 
     .container-ola{
-        margin: 6rem 4rem;
+        margin: auto 4rem;
         .otros-productos{
             h5{
                 font-family: $tipografiaSecundaria;
