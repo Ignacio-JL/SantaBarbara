@@ -127,41 +127,31 @@
 
 
 //Cuadro de pago, envios y cambios
-.boxinfo{
-    height: auto;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 60% 40%;
-    grid-template-areas: "pagos fdeliv deliv"
-                        "pagostext fdelivtext delivtext";
-
-    &-pagos{
-        grid-area: pagos;
-        position: relative;
-        top: 15%;
+.slide{
+    
+    &-box{
+        filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0%);
+        }
     }
-    &-fastdeliv{
-        grid-area: fdeliv;
-    }
-    &-deliv{
-        grid-area: deliv;
-        position: relative;
-        top: 5%;
-    }
-    &-pagostext{
-        grid-area: pagostext;
-    }
-    &-fdelivtext{
-        grid-area: fdelivtext;
-    }
-    &-delivtext{
-        grid-area: delivtext;
-    }
-    p{
-        color: $colorGris;
+    &-text{
+        color: $colorRosaOscuro;
         font-family: $tipografiaSecundaria;
     }
+    &-img{
+        width: 1rem;
+        height: 1rem;
+    }
+
+}
+
+.colorflecha{
+    color: $colorRosaOscuro;
+    filter: grayscale(100%);
+        &:hover{
+            filter: grayscale(0%);
+        }
 }
 
 

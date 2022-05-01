@@ -1,5 +1,5 @@
 
-//Inicio Crear cards segun info el json
+//Inicio PRODUCTOS DESTACADOS
 const items = document.getElementById('items')
 const templateCard = document.getElementById('template-card').content
 const fragment = document.createDocumentFragment()
@@ -34,7 +34,8 @@ const bikiniCards = data => {
     })
     items.appendChild(fragment)
 }
-//Fin crear cards
+//Fin PRODUCTOS DESTACADOS
+
 
 
 class Producto{

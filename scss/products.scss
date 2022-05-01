@@ -1,0 +1,11 @@
+.bikini-title{
+    @extend .category-title;
+}
+
+.text-vertodo{
+    @extend .productdest-cardtitle;
+    text-decoration: none;
+    &:hover{
+        color: darken($color: $colorRosaOscuro, $amount: 10);
+    }
+}
