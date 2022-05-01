@@ -56,6 +56,7 @@ body{
             font-family: $tipografiaPrincipal;
             h3, button{font-family: $tipografiaSecundaria;}
             h6{
+                
                 font-style: italic;
                 font-weight: 300;
                 font-size: 22px;
@@ -63,6 +64,7 @@ body{
                 color: #959595;
             }
             h2{
+                text-transform: capitalize;
                 color: $colorTerciario;
                 font-weight: 800;
                 font-size: 35px;
@@ -97,7 +99,9 @@ body{
             flex-direction: row;
             justify-content: space-between;
             .detail-images-container{
+
                 width: 30%;
+                
                 img{
                     width: 100%;
                 }

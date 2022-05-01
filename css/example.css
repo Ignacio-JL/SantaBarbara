@@ -301,6 +301,7 @@ body .detail-grid {
       line-height: 27px;
       color: #959595; }
     body .detail-grid .detail-info h2 {
+      text-transform: capitalize;
       color: #FE336D;
       font-weight: 800;
       font-size: 35px;
