@@ -255,7 +255,10 @@ body .detail-grid {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3fr 1fr;
   row-gap: 20px;
-  column-gap: 45px; }
+  column-gap: 45px;
+  margin: 4rem; }
+  body .detail-grid .detail-image img {
+    width: 100%; }
   body .detail-grid .detail-info {
     font-family: "Montserrat"; }
     body .detail-grid .detail-info .absoluteAux {
@@ -302,6 +305,18 @@ body .detail-grid {
       width: 30%; }
       body .detail-grid .detail-images .detail-images-container img {
         width: 100%; }
+  body .detail-grid .detail-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    body .detail-grid .detail-button button {
+      position: relative;
+      bottom: 1rem;
+      color: white;
+      width: 181px;
+      height: 45px;
+      border-radius: 5px;
+      background: #FE336D; }
 
 body {
   position: relative;

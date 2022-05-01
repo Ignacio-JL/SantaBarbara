@@ -5,6 +5,12 @@ body{
         grid-template-rows: 3fr 1fr;
         row-gap: 20px;
         column-gap: 45px;
+        margin: 4rem;
+        .detail-image{
+            img{
+                width: 100%;
+            }
+        }
         .detail-info{
             .absoluteAux{position: absolute; height: 100%;}
             font-family: $tipografiaPrincipal;
@@ -55,6 +61,20 @@ body{
                 img{
                     width: 100%;
                 }
+            }
+        }
+        .detail-button{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            button{
+                position: relative;
+                bottom: 1rem;
+                color: white;
+                width: 181px;
+                height: 45px;
+                border-radius: 5px;
+                background: $colorTerciario;
             }
         }
     }
