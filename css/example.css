@@ -274,6 +274,39 @@ body .swiper-slide {
   -webkit-align-items: center;
   align-items: center; }
 
+body .swiper-content {
+  text-align: left; }
+  body .swiper-content .slide-info h4 {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 20px;
+    color: #FE336D; }
+  body .swiper-content .slide-info h5 {
+    text-transform: capitalize;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px; }
+  body .swiper-content .slide-info h6 {
+    text-transform: capitalize;
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px; }
+  body .swiper-content .slide-info .link-ver-mas {
+    background: #FE336D;
+    border-radius: 5px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    body .swiper-content .slide-info .link-ver-mas a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      font-size: 12px; }
+
 body .swiper-slide img {
   display: block;
   width: 100%;

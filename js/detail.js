@@ -95,19 +95,21 @@ fetch(url)
         // Generamos orden aleatorio
         prod.sort(()=>{return Math.random()-0.5});
 
-        let swipperContent = document.querySelector('#swipper-content');
+        let swipperContent = document.querySelector('#swiper-content');
         swipperContent.innerHTML ='';
         let nodo = '';
         prod.forEach(p => {
             nodo +=`
             
                 <div class="swiper-slide">
-                    <div class="swipper-content">
+                    <div class="swiper-content">
                     <img src="${p.image[0]}" class="d-block w-100" alt="">
-                        <h4>${p.price}</h3>
-                        <h5>${p.name}</h5>
-                        <h6>${p.type}</h6>
-                        <div><a href="/pages/detail.html?id=${p.id}">Ver más</a></div>
+                        <div class="slide-info">
+                            <h4>AR$${p.price},00</h4>
+                            <h5>${p.name}</h5>
+                            <h6>${p.type}</h6>
+                            <div class="link-ver-mas"><a href="/pages/detail.html?id=${p.id}">Ver más</a></div>
+                        </div>
                     </div>
                 </div>
             
