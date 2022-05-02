@@ -19,14 +19,13 @@ const fetchDataTwo = async () => {
 }
 
 const cardsproductos = datos => {
-    const solocuatro = datos.slice(0, 4)
-    solocuatro.forEach(producto => {
+    datos.forEach(producto => {
         if (producto.type === 'bikini') {
             productsCard.querySelector('h5').textContent = producto.name.toUpperCase() 
             productsCard.querySelector('p').textContent = 'AR$ ' + producto.price
             productsCard.querySelector('img').setAttribute("src", producto.image[0])
             productsCard.querySelector('button').dataset.id = producto.id
-    
+            productsCard.querySelector('a').setAttribute("href", `/pages/detail.html?id=${producto.id}`)
             const clone = productsCard.cloneNode(true)
             fragmentTwo.appendChild(clone)
         }         

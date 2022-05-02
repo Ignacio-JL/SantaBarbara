@@ -27,7 +27,7 @@ const bikiniCards = data => {
             templateCard.querySelector('#type').textContent = producto.type.toUpperCase()
             templateCard.querySelector('img').setAttribute("src", producto.image[0])
             templateCard.querySelector('button').dataset.id = producto.id
-    
+            templateCard.querySelector('a').setAttribute("href", `/pages/detail.html?id=${producto.id}`)
             const clone = templateCard.cloneNode(true)
             fragment.appendChild(clone)
         }         
