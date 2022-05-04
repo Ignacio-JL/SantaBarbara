@@ -46,15 +46,16 @@ function buscardor_interno(){
 
 // Abre la pantalla del buscador
 
-// document.getElementById('openSearch').onclick(()=>{
-//     document.body.style.background = "#FE98B5";
-//     document.querySelector('#container-main-search').style.display= "";
+document.getElementById('openSearch').onclick(()=>{
+    document.body.style.background = "#FE98B5";
+    document.querySelector('#container-main-search').style.display= "";
         
 
-//     }
-// );
+    }
+);
 
 // Cerrar la pantalla del buscador
 document.getElementById('close-search').onclick = () =>{
     document.querySelector('#container-main-search').style.display= "none";
+    document.body.style.background = "none";
 }
