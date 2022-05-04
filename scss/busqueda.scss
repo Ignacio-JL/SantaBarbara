@@ -1,0 +1,20 @@
+body{
+    background: $colorSecundario;
+    #search-window{
+    }
+    .container-search{
+        input{
+            background: none;
+            border: none;
+            color: #fff;
+            border-bottom: 1px solid #FFFFFF;
+            font-family: 'Font Awesome 5 free';
+            font-weight: 700;
+        }
+        input::placeholder{
+            
+            color: #fff;
+            opacity: .6;
+        }
+    }
+}

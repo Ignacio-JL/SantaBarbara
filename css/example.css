@@ -411,6 +411,19 @@ body .container-ola {
     color: #959595; }
 
 body {
+  background: #FE98B5; }
+  body .container-search input {
+    background: none;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #FFFFFF;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 700; }
+  body .container-search input::placeholder {
+    color: #fff;
+    opacity: .6; }
+
+body {
   position: relative;
   max-width: 100%;
   height: 100%; }
