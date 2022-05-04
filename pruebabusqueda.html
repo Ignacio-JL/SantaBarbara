@@ -10,17 +10,25 @@
     <script src="https://kit.fontawesome.com/61802dd1ec.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <button id="close-search">X</button>
-    <div class="container-search">
-        <div>
-            <input type="text" placeholder="Buscar un producto">
-            
+    <div id="container-main-search">
+        <button id="close-search">X</button>
+        <div class="container-search">
+            <div>
+                <input id="input-search" type="text" placeholder="Buscar un producto">
+                
+            </div>
+            <div>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.8958 17.5833H18.6702L18.2463 17.1594C19.7571 15.4096 20.6667 13.1356 20.6667 10.6458C20.6667 5.11125 16.1804 0.625 10.6458 0.625C5.11125 0.625 0.625 5.11125 0.625 10.6458C0.625 16.1804 5.11125 20.6667 10.6458 20.6667C13.1356 20.6667 15.4096 19.7571 17.1594 18.254L17.5833 18.6779V19.8958L25.2917 27.5887L27.5887 25.2917L19.8958 17.5833ZM10.6458 17.5833C6.81479 17.5833 3.70833 14.4769 3.70833 10.6458C3.70833 6.81479 6.81479 3.70833 10.6458 3.70833C14.4769 3.70833 17.5833 6.81479 17.5833 10.6458C17.5833 14.4769 14.4769 17.5833 10.6458 17.5833Z" fill="white"/>
+                </svg>
+            </div>
         </div>
-        <div>
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.8958 17.5833H18.6702L18.2463 17.1594C19.7571 15.4096 20.6667 13.1356 20.6667 10.6458C20.6667 5.11125 16.1804 0.625 10.6458 0.625C5.11125 0.625 0.625 5.11125 0.625 10.6458C0.625 16.1804 5.11125 20.6667 10.6458 20.6667C13.1356 20.6667 15.4096 19.7571 17.1594 18.254L17.5833 18.6779V19.8958L25.2917 27.5887L27.5887 25.2917L19.8958 17.5833ZM10.6458 17.5833C6.81479 17.5833 3.70833 14.4769 3.70833 10.6458C3.70833 6.81479 6.81479 3.70833 10.6458 3.70833C14.4769 3.70833 17.5833 6.81479 17.5833 10.6458C17.5833 14.4769 14.4769 17.5833 10.6458 17.5833Z" fill="white"/>
-            </svg>
+        <div id="container-list-search">
+            <ul id="list-searchs">
+    
+            </ul>
         </div>
     </div>
+    <script src="/js/search.js"></script>
 </body>
 </html>
