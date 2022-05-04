@@ -412,16 +412,37 @@ body .container-ola {
 
 body {
   background: #FE98B5; }
-  body .container-search input {
+  body #close-search {
+    position: relative;
+    top: 10vh;
+    left: 84vw;
     background: none;
     border: none;
-    color: #fff;
-    border-bottom: 1px solid #FFFFFF;
-    font-family: 'Font Awesome 5 free';
-    font-weight: 700; }
-  body .container-search input::placeholder {
-    color: #fff;
-    opacity: .6; }
+    color: white;
+    font-size: 2rem; }
+  body .container-search {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    justify-content: center; }
+    body .container-search input {
+      background: none;
+      border: none;
+      outline: none;
+      color: #fff;
+      border-bottom: 1px solid #FFFFFF;
+      width: 300px;
+      height: 1.8rem;
+      font-size: 28px; }
+    body .container-search input::placeholder {
+      font-family: "Nunito";
+      font-style: italic;
+      font-weight: 300;
+      font-size: 28px;
+      color: #fff;
+      opacity: .6; }
+    body .container-search svg {
+      margin-left: -2rem; }
 
 body {
   position: relative;
