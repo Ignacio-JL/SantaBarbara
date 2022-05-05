@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto</title>
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Css-->
+    <link rel="stylesheet" href="../css/example.css" />
+
+    <title>Santa Bárbara - Inicio</title>
+
+    <!--Icons-->
+    <script
+      src="https://kit.fontawesome.com/61802dd1ec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <div id="container-main-search">
+
+        <button id="close-search">X</button>
+          <div class="container-search">
+              <div>
+                  <input id="input-search" type="text" placeholder="Buscar un producto">
+                  
+              </div>
+              <div>
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.8958 17.5833H18.6702L18.2463 17.1594C19.7571 15.4096 20.6667 13.1356 20.6667 10.6458C20.6667 5.11125 16.1804 0.625 10.6458 0.625C5.11125 0.625 0.625 5.11125 0.625 10.6458C0.625 16.1804 5.11125 20.6667 10.6458 20.6667C13.1356 20.6667 15.4096 19.7571 17.1594 18.254L17.5833 18.6779V19.8958L25.2917 27.5887L27.5887 25.2917L19.8958 17.5833ZM10.6458 17.5833C6.81479 17.5833 3.70833 14.4769 3.70833 10.6458C3.70833 6.81479 6.81479 3.70833 10.6458 3.70833C14.4769 3.70833 17.5833 6.81479 17.5833 10.6458C17.5833 14.4769 14.4769 17.5833 10.6458 17.5833Z" fill="white"/>
+                  </svg>
+              </div>
+          </div>
+          <div id="container-list-search">
+              <ul id="list-searchs">
+      
+              </ul>
+          </div>
+    </div>
+
+    <div id="body-content">
+
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light p-3 nav-bar-sty">
+          <div class="container-fluid">
+            <a href="./home.html"
+              ><img
+                src="../assets/marcalogo.png"
+                alt="logo"
+                href="./home.html"
+                class="px-5"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto me-auto mb-2 mb-lg-0 text-left">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./products.html"
+                    >Tienda</a
+                  >
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Ayuda
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./infohelp.html#info"
+                        >Información de envíos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./infohelp.html#tabla"
+                        >Tabla de talles</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./infohelp.html#cuidado"
+                        >Cómo cuidar mi bikini</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./infohelp.html#cambio"
+                        >Politica de cambios</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="./aboutus.html">Quienes somos</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button id="openSearch" class="btn btn-outline" type="submit">
+                  <img
+                    src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div class="line-divided"></div>
+    
+        <!--Navegation-->
+        <div style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb mx-5 my-3">
+            <li class="breadcrumb-item">
+              <a href="../pages/home.html" class="navegation-sty">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+          </ol>
+        </div>
+    
+        <!-- ACA VA MI CODIGO-->
+    
+         <!-- Contenido Detail -->
+         <div id="container-detail">
+            <div class="detail-grid">
+                <div class="detail-image">
+                    <img src="/assets/products/dalia_manchas_1.jpg" alt="">
+                </div>
+        
+                <div class="detail-info">
+                    
+                    <h6>Entera</h6>
+                    <h2>Aro cebra</h2>
+                    <h3>AR$ 6.300,00</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ea distinctio aliquid adipisci necessitatibus quod quia exercitationem soluta in blanditiis culpa alias nostrum cupiditate, fugiat accusantium dolor repellat et! Voluptatum.</p>
+                    <div>
+                        <img src="/assets/ola.png" class="w-100" alt="ola">
+                    </div>
+                </div>
+        
+                <div class="detail-images">
+                    <div class="detail-images-container">
+                        <button><img class="selection-1" src="/assets/products/dalia_manchas_1.jpg" alt=""></button>
+                    </div>
+                    <div class="detail-images-container">
+                        <button><img class="selection-2" src="/assets/products/dalia_manchas_2.jpg" alt=""></button>
+                    </div>
+                    <div class="detail-images-container">
+                        <button><img class="selection-3" src="/assets/products/dalia_manchas_3.jpg" alt=""></button>
+                    </div>
+                    
+                </div>
+                <div class="detail-button">
+                    <button>Continuar</button>
+                </div>
+        
+            </div>
+    
+        </div>
+    
+        <!-- Otros productos -->
+        <div class="container-ola">
+            <div class="otros-productos">
+                <h5>Otros Productos</h5>
+            </div>
+            <div class="image-ola mx-3">
+                <img src="/assets/ola.png" alt="ola">
+            </div>
+            <div class="ver-todos">
+                <a href="#">Ver todos ></a>
+            </div>
+    
+        </div>
+    
+        <!-- Carousel de productos -->
+        <div class="swiper mySwiper2 my-4">
+            <div id="swiper-content" class="swiper-wrapper">
+                
+              <!-- example -->
+                  <!-- <div class="swiper-slide">
+                    <img src="/assets/products/aro_cebra_1.jpg" class="d-block w-100" alt="division">
+                  </div> -->
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+    
+    
+    
+    
+        <!-- ACA VA MI CODIGO-->
+    
+        <!--Formas de pago, envíos, polit de cambios-->
+        <div class="m-5 p-5 text-center">
+          <div class="swiper mySwiper m-4 p-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide">
+                <div class="p-2 slide-box">
+                  <img
+                    src="../assets/dollar-circle.png"
+                    alt=""
+                    class="slide-img w-25 h-25 m-auto"
+                  />
+                  <p class="slide-text">Formas de pago</p>
+                </div>
+              </div>
+    
+              <div class="swiper-slide slide">
+                <div class="p-2 slide-box">
+                  <img
+                    src="../assets/truck-fast.png"
+                    alt=""
+                    class="slide-img w-25 h-25 m-auto"
+                  />
+                  <p class="slide-text">Envíos</p>
+                </div>
+              </div>
+    
+              <div class="swiper-slide slide">
+                <div class="p-2 slide-box">
+                  <img
+                    src="../assets/box-pack.png"
+                    alt=""
+                    class="slide-img w-25 h-25 m-auto"
+                  />
+                  <p class="slide-text">Política de cambios</p>
+                </div>
+              </div>
+    
+              <div class="swiper-slide slide">
+                <div class="p-2 slide-box">
+                  <img
+                    src="../assets/take-care.png"
+                    alt=""
+                    class="slide-img w-25 h-25 m-auto"
+                  />
+                  <p class="slide-text">Cómo cuidar mi bikini</p>
+                </div>
+              </div>
+    
+              <div class="swiper-slide slide">
+                <div class="p-2 slide-box">
+                  <img
+                    src="../assets/table-size.png"
+                    alt=""
+                    class="slide-img w-25 h-25 m-auto"
+                  />
+                  <p class="slide-text">Tabla de talles</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next colorflecha"></div>
+            <div class="swiper-button-prev colorflecha"></div>
+          </div>
+        </div>
+    
+        <!--Footer-->
+        <footer class="text-center pt-5">
+          <!-- Newsletter-->
+          <div class="text-center">
+            <div class="container p-4">
+              <section class="">
+                <form action="">
+                  <div class="row newsl-sty">
+                    <div class="newsl-sty-1">
+                      <p class="m-0 p-0">
+                        <strong>SUSCRIBITE AL NEWSLETTER</strong>
+                      </p>
+                      <p class="m-0">Para recibir ofertas y novedades en tu mail</p>
+                    </div>
+    
+                    <div class="newsl-sty-2 text-center">
+                      <img src="../assets/mail.png" />
+                    </div>
+    
+                    <div class="newsl-sty-3">
+                      <div class="form-outline mb-4 d-flex flex-row">
+                        <input
+                          type="email"
+                          id="form5Example2"
+                          class="form-control newsl-sty-3-mailbox"
+                          placeholder="Ingresa tu mail"
+                        />
+                        <input
+                          type="button"
+                          class="btn newsl-sty-button px-2"
+                          value="Enviar"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+    
+          <!--Adorno de Ola-->
+          <div class="ola-divided py-4">
+            <img src="../assets/olaOscuro.png" class="w-750" alt="ola" />
+          </div>
+    
+          <!--Footer-->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <div class="row mt-3">
+                <!--Logo y nombre-->
+                <div class="col-md-2 col-sm-6 col-xs-6 footer-column-1">
+                  <div class="footer-column-1-logo">
+                    <img src="../assets/marca.png" alt="" class="footer-logo p-2" />
+                  </div>
+                  <div>
+                    <p class="text-reset text-center mb-5">
+                      BIKINIS & MORE DE TUCUMAN, AR. SHOP ONLINE
+                    </p>
+                  </div>
+                </div>
+    
+                <!--Redes-->
+                <div class="col-md-4 col-sm-6 footer-column-2">
+                  <img src="../assets/whats.png" alt="" />
+                  <img src="../assets/insta.png" alt="" />
+                  <img src="../assets/face.png" alt="" />
+                </div>
+    
+                <div class="col-md-6 footer-right">
+                  <div class="container text-center">
+                    <div class="row">
+                      <!--Tienda-->
+                      <div class="col-md-3 col-xs-6 mt-3">
+                        <a href="./products.html"
+                          ><h6 class="text-uppercase fw-bold mb-2">Tienda</h6></a
+                        >
+                        <p>
+                          <a
+                            href="./products.html#bikinis"
+                            class="text-reset textoLink"
+                            >BIKINIS</a
+                          >
+                        </p>
+                        <p>
+                          <a href="./products.html#enteras" class="text-reset"
+                            >ENTERAS</a
+                          >
+                        </p>
+                        <p>
+                          <a href="./products.html#conjuntos" class="text-reset"
+                            >CONJUNTOS</a
+                          >
+                        </p>
+                        <p>
+                          <a href="./products.html#buzos" class="text-reset"
+                            >BUZOS</a
+                          >
+                        </p>
+                      </div>
+    
+                      <!--Ayuda-->
+                      <div class="col-md-4 col-sm-6 mt-3">
+                        <a href="./infohelp.html"
+                          ><h6 class="text-uppercase fw-bold mb-2">Ayuda</h6></a
+                        >
+                        <p>
+                          <a href="./infohelp.html#info" class="text-reset"
+                            >INFORMACIÓN DE LOS ENVIOS</a
+                          >
+                        </p>
+                        <p>
+                          <a href="./infohelp.html#tabla" class="text-reset"
+                            >TABLA DE TALLES</a
+                          >
+                        </p>
+                        <p>
+                          <a href="./infohelp.html#cuidado" class="text-reset"
+                            >CÓMO CUIDAR MI BIKINI</a
+                          >
+                        </p>
+                        <p>
+                          <a href="./infohelp.html#cambio" class="text-reset"
+                            >POLITICA DE CAMBIOS</a
+                          >
+                        </p>
+                      </div>
+    
+                      <!--Quienes somos-->
+                      <div class="col-md-2 col-sm-6 mt-3">
+                        <a href="./aboutus.html"
+                          ><h6 class="text-uppercase fw-bold mb-2">
+                            Quienes Somos
+                          </h6></a
+                        >
+                      </div>
+    
+                      <!--Contacto-->
+                      <div class="col-md-3 col-sm-6 mt-3">
+                        <a href="./contact.html"
+                          ><h6 class="text-uppercase fw-bold mb-2">Contacto</h6></a
+                        >
+                        <p><a href="#!" class="text-reset">ESCRIBINOS</a></p>
+                        <p><a href="#!" class="text-reset">SEGUINOS</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    
+          <div
+            class="text-center p-2"
+            style="background-color: rgba(0, 0, 0, 0.05)"
+          >
+            BY SANTA BARBARA
+          </div>
+    
+          <a
+            ><img
+              src="../assets/whats1.png"
+              alt="Whatsapp-Logo-PNG"
+              class="wsppFixed"
+          /></a>
+        </footer>
+
+
+    </div>
+
+
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Generador de detalle -->
+    <script src="/js/detail.js"></script>
+    <!-- Busqueda -->
+    <script src="/js/search.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 4,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: false,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+  </script>
+
+
+  </body>
+</html>

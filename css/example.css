@@ -382,6 +382,166 @@ body #container-main-search {
         body #container-main-search #container-list-search #list-searchs li:hover {
           opacity: .7; }
 
+body .swiper {
+  width: auto !important;
+  height: 100%;
+  margin-left: 4rem;
+  margin-right: 4rem; }
+
+body .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
+body .swiper-content {
+  text-align: left; }
+  body .swiper-content .slide-info h4 {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 20px;
+    color: #FE336D; }
+  body .swiper-content .slide-info h5 {
+    text-transform: capitalize;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px; }
+  body .swiper-content .slide-info h6 {
+    text-transform: capitalize;
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px; }
+  body .swiper-content .slide-info .link-ver-mas {
+    background: #FE336D;
+    border-radius: 5px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    body .swiper-content .slide-info .link-ver-mas a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      font-size: 12px; }
+
+body .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+body .swiper-button-next:after, body .swiper-rtl .swiper-button-prev:after, body .swiper-button-prev:after, body .swiper-rtl .swiper-button-next:after {
+  color: #FE336D;
+  font-size: 1.5rem; }
+
+body .swiper-button-next, body .swiper-rtl .swiper-button-prev, body .swiper-button-prev, body .swiper-rtl .swiper-button-next {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%; }
+
+body .detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  row-gap: 20px;
+  column-gap: 45px;
+  margin: 4rem; }
+  body .detail-grid .detail-image img {
+    width: 100%; }
+  body .detail-grid .detail-info {
+    font-family: "Montserrat"; }
+    body .detail-grid .detail-info .absoluteAux {
+      position: absolute;
+      height: 100%; }
+    body .detail-grid .detail-info h3, body .detail-grid .detail-info button {
+      font-family: "Nunito"; }
+    body .detail-grid .detail-info h6 {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 27px;
+      color: #959595; }
+    body .detail-grid .detail-info h2 {
+      text-transform: capitalize;
+      color: #FE336D;
+      font-weight: 800;
+      font-size: 35px;
+      line-height: 43px; }
+    body .detail-grid .detail-info h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      color: #CCCCCC;
+      margin-top: 1rem; }
+    body .detail-grid .detail-info p {
+      color: #CCCCCC;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 2rem; }
+    body .detail-grid .detail-info button {
+      position: relative;
+      bottom: 14rem;
+      color: white;
+      width: 181px;
+      height: 45px;
+      border-radius: 5px;
+      background: #FE336D; }
+  body .detail-grid .detail-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    body .detail-grid .detail-images .detail-images-container {
+      width: 30%; }
+      body .detail-grid .detail-images .detail-images-container img {
+        width: 100%; }
+  body .detail-grid .detail-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    body .detail-grid .detail-button button {
+      position: relative;
+      bottom: 1rem;
+      color: white;
+      width: 181px;
+      height: 45px;
+      border-radius: 5px;
+      background: #FE336D; }
+
+body .container-ola {
+  margin: auto 4rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto; }
+  body .container-ola .otros-productos h5 {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #959595; }
+  body .container-ola .image-ola img {
+    width: 100%; }
+  body .container-ola .ver-todos a {
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 12px;
+    color: #959595; }
+
 body {
   position: relative;
   max-width: 100%;
