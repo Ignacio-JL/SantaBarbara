@@ -18,7 +18,30 @@
 
 </head>
 <body>
-      
+  <div id="container-main-search">
+
+    <button id="close-search">X</button>
+      <div class="container-search">
+          <div>
+              <input id="input-search" type="text" placeholder="Buscar un producto">
+              
+          </div>
+          <div>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.8958 17.5833H18.6702L18.2463 17.1594C19.7571 15.4096 20.6667 13.1356 20.6667 10.6458C20.6667 5.11125 16.1804 0.625 10.6458 0.625C5.11125 0.625 0.625 5.11125 0.625 10.6458C0.625 16.1804 5.11125 20.6667 10.6458 20.6667C13.1356 20.6667 15.4096 19.7571 17.1594 18.254L17.5833 18.6779V19.8958L25.2917 27.5887L27.5887 25.2917L19.8958 17.5833ZM10.6458 17.5833C6.81479 17.5833 3.70833 14.4769 3.70833 10.6458C3.70833 6.81479 6.81479 3.70833 10.6458 3.70833C14.4769 3.70833 17.5833 6.81479 17.5833 10.6458C17.5833 14.4769 14.4769 17.5833 10.6458 17.5833Z" fill="white"/>
+              </svg>
+          </div>
+      </div>
+      <div id="container-list-search">
+          <ul id="list-searchs">
+  
+          </ul>
+      </div>
+  </div>
+
+  <div id="body-content">
+
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light p-3 nav-bar-sty">
       <div class="container-fluid">
@@ -32,7 +55,7 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./products.html">Tienda</a>
             </li>
-
+  
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Ayuda
@@ -44,27 +67,27 @@
                 <li><a class="dropdown-item" href="./infohelp.html#cambio">Politica de cambios</a></li>
               </ul>
             </li>
-
+  
             <li class="nav-item">
               <a class="nav-link" href="./aboutus.html">Quienes somos</a>
             </li>
-
+  
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contacto</a>
             </li>
-
+  
           </ul>
           <form class="d-flex">
-            <button class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
+            <button id="openSearch" class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
           </form>
         </div>
         
       </div>
     </nav>
     <div class="line-divided"></div>
-
+  
     
-
+  
     <!--Navegation-->
     <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb mx-5 my-3">
@@ -81,8 +104,8 @@
           <li class="breadcrumb-item" aria-current="page"><a href="#" class="navegation-sty">Bikinis</a></li>
         </ol>
     </div> -->
-
-
+  
+  
     <!--Categorias-->
     <div class="container mt-5 mb-4 category">
       <h4 class="category-title mb-1">Categorías</h4>
@@ -99,7 +122,7 @@
         <a href="./conjuntos.html"><img src="../assets/conjuntos.png" class="h-100 w-95" alt=""></a>
       </div>
     </div>
-
+  
     
     <!--Cards-->
     <!--Bikinis-->
@@ -112,10 +135,10 @@
         </div>
         <a class="text-vertodo" href="./bikinis.html">ver todas ></a>
       </div>
-
+  
       <div class="row" id="bikinis"></div>
     </div>
-
+  
     <!--Enteras-->
     <div class="container m-5 p-2">
       <div class="d-inline-flex">
@@ -126,10 +149,10 @@
         </div>
         <a class="text-vertodo">ver todas ></a>
       </div>
-
+  
       <div class="row" id="enteras"></div>
     </div>
-
+  
     <!--Buzos y Conjuntos-->
     <div class="container m-5 p-2">
       <div class="d-inline-flex">
@@ -140,15 +163,15 @@
         </div>
         <a class="text-vertodo">ver todos ></a>
       </div>
-
+  
       <div class="row" id="buzosyconjuntos"></div>
     </div>
-
-
-
+  
+  
+  
     <!--Footer-->
     <footer class="text-center pt-5">
-
+  
       <!-- Newsletter-->
       <div class="text-center">
           <div class="container p-4">
@@ -261,10 +284,19 @@
           <a><img src="../assets/whats1.png" alt="Whatsapp-Logo-PNG" class="wsppFixed"></a>
     </footer>
 
+    
+  </div>
+
+
+      
+
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!--JavaScript-->
     <script src="../js/main.js"></script>
+
+    <!--Busqueda  -->
+    <script src="/js/search.js"></script>
 </body>
 </html>

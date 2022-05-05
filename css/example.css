@@ -326,6 +326,62 @@ body footer {
   .text-vertodo:hover {
     color: #fd0149; }
 
+body #container-main-search {
+  width: 100vw;
+  display: none; }
+  body #container-main-search #close-search {
+    position: relative;
+    top: 10vh;
+    left: 84vw;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem; }
+  body #container-main-search .container-search {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    justify-content: center; }
+    body #container-main-search .container-search input {
+      background: none;
+      border: none;
+      outline: none;
+      color: #fff;
+      border-bottom: 1px solid #FFFFFF;
+      width: 350px;
+      height: 1.8rem;
+      font-size: 28px; }
+    body #container-main-search .container-search input::placeholder {
+      font-family: "Nunito";
+      font-style: italic;
+      font-weight: 300;
+      font-size: 28px;
+      color: #fff;
+      opacity: .6; }
+    body #container-main-search .container-search svg {
+      margin-left: -2rem; }
+  body #container-main-search #container-list-search {
+    display: flex;
+    justify-content: center; }
+    body #container-main-search #container-list-search #list-searchs {
+      width: 350px;
+      padding-left: 0; }
+      body #container-main-search #container-list-search #list-searchs li {
+        list-style: none;
+        font-size: 25px;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5px;
+        background-color: #fff;
+        text-transform: capitalize; }
+        body #container-main-search #container-list-search #list-searchs li a {
+          color: #FE98B5;
+          text-decoration: none; }
+        body #container-main-search #container-list-search #list-searchs li:hover {
+          opacity: .7; }
+
 body {
   position: relative;
   max-width: 100%;
