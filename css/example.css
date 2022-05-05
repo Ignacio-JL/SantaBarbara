@@ -388,6 +388,10 @@ body .swiper {
   margin-left: 4rem;
   margin-right: 4rem; }
 
+body .swiper-filter .swiper-filter-products {
+  margin-left: 0;
+  margin-right: 0; }
+
 body .swiper-slide {
   text-align: center;
   font-size: 18px;
