@@ -1,0 +1,46 @@
+.about{
+    width: auto;
+    margin: 3rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50% 0%;
+    grid-template-rows: 100%;
+    grid-template-areas: "imagen texto imagen2";
+
+    &-img{
+        grid-area: imagen;
+    }
+    &-text{
+        grid-area: texto;
+    }
+    &-imgdos{
+        grid-area: imagen2;
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .about{
+        margin: 0.5rem;
+        padding: 0.5rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50% 0%;
+        grid-template-areas: "imagen2"
+                            "texto"
+                            "imagen";
+
+        &-img{
+            grid-area: imagen;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+        &-text{
+            grid-area: texto;
+        }
+        &-imgdos{
+            visibility: visible;
+            grid-area: imagen2;
+        }
+    }
+}

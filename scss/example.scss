@@ -17,9 +17,7 @@
 
 @import "products";
 
-@import "busqueda";
-
-@import "detail";
+@import "aboutus";
 
 body{
     position: relative;
@@ -63,4 +61,21 @@ body{
             color: darken($color: $colorRosaOscuro, $amount: 10);
         }
     }
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.btn:focus{
+    box-shadow: none;
+}
+
+a:hover{
+    color: white;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    color: $colorRosaOscuro;
+    font-size: 1.5rem;
 }

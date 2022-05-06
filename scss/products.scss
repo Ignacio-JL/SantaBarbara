@@ -9,3 +9,9 @@
         color: darken($color: $colorRosaOscuro, $amount: 10);
     }
 }
+
+@media only screen and (max-width: 500px){
+    .text-vertodo{
+        font-size: 0.5rem;
+    }
+}

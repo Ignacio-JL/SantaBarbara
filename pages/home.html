@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/favicon.png">
+
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
@@ -18,38 +21,11 @@
 
     <!--Icons-->
     <script src="https://kit.fontawesome.com/61802dd1ec.js" crossorigin="anonymous"></script>
+
     
 </head>
 <body>
-
-  <div id="container-main-search">
-
-    <button id="close-search">X</button>
-      <div class="container-search">
-          <div>
-              <input id="input-search" type="text" placeholder="Buscar un producto">
-              
-          </div>
-          <div>
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.8958 17.5833H18.6702L18.2463 17.1594C19.7571 15.4096 20.6667 13.1356 20.6667 10.6458C20.6667 5.11125 16.1804 0.625 10.6458 0.625C5.11125 0.625 0.625 5.11125 0.625 10.6458C0.625 16.1804 5.11125 20.6667 10.6458 20.6667C13.1356 20.6667 15.4096 19.7571 17.1594 18.254L17.5833 18.6779V19.8958L25.2917 27.5887L27.5887 25.2917L19.8958 17.5833ZM10.6458 17.5833C6.81479 17.5833 3.70833 14.4769 3.70833 10.6458C3.70833 6.81479 6.81479 3.70833 10.6458 3.70833C14.4769 3.70833 17.5833 6.81479 17.5833 10.6458C17.5833 14.4769 14.4769 17.5833 10.6458 17.5833Z" fill="white"/>
-              </svg>
-          </div>
-      </div>
-      <div id="container-list-search">
-          <ul id="list-searchs">
-  
-          </ul>
-      </div>
-  </div>
-
-
-
-  <div id="body-content">
     
-
-
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light p-3 nav-bar-sty">
         <div class="container-fluid">
@@ -63,47 +39,46 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./products.html">Tienda</a>
               </li>
-    
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Ayuda
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./infohelp.html#pago">Formas de pago</a></li>
                   <li><a class="dropdown-item" href="./infohelp.html#info">Información de envíos</a></li>
-                  <li><a class="dropdown-item" href="./infohelp.html#tabla">Tabla de talles</a></li>
-                  <li><a class="dropdown-item" href="./infohelp.html#cuidado">Cómo cuidar mi bikini</a></li>
                   <li><a class="dropdown-item" href="./infohelp.html#cambio">Politica de cambios</a></li>
+                  <li><a class="dropdown-item" href="./infohelp.html#cuidado">Cómo cuidar mi bikini</a></li>
+                  <li><a class="dropdown-item" href="./infohelp.html#tabla">Tabla de talles</a></li>
                 </ul>
               </li>
-    
+
               <li class="nav-item">
                 <a class="nav-link" href="./aboutus.html">Quienes somos</a>
               </li>
-    
+
               <li class="nav-item">
                 <a class="nav-link" href="./contact.html">Contacto</a>
               </li>
-    
+
             </ul>
-            <!-- <form class="d-flex">
-              <button id="openSearch" class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
-            </form> -->
             <form class="d-flex">
-              <button id="openSearch" class="btn btn-outline" ><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
+              <button class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
             </form>
           </div>
           
         </div>
       </nav>
       <div class="line-divided"></div>
-    
+      
+
     <!--Imagen principal-->
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-    
+
       <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../assets/bi11.png" class="d-block w-100" alt="...">
@@ -128,19 +103,24 @@
             </div>          
           </div> 
             
-    
-    
+
+
       </div>
-    
+
      
-    
+
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>  
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    
-    
+
+    <!--Input de busqueda-->
+    <!-- <div class="m-5"> 
+      <input type="text" placeholder="search.." class="border-0 border-bottom">   
+      <i class="fas fa-search text-white"></i> 
+    </div>  -->
+
     <!--Categorias-->
     <div class="container mt-5 mb-4 category">
       <h4 class="category-title mb-1">Categorías</h4>
@@ -157,23 +137,23 @@
         <a href="./products.html#buzosyconjuntos"><img src="../assets/Groupconjuntos.png" class="h-100 w-95" alt=""></a>
       </div>
     </div>
-    
-    
+
+
     <!--Adorno de Ola-->
     <div class="ola-divided mx-4 my-5 py-4">
       <img src="../assets/ola.png" class="w-100" alt="ola">
     </div>
-    
-    
+
+
     <!--Productos destacados-->
     <div class="container mt-5 mb-4 productdest">
       <h4 class="productdest-title mb-1">Productos Destacados</h4>
     </div>
-    
+
     <div class="container my-5">
       <div class="row" id="items"></div>
     </div>
-    
+
     <template id="template-card">
       <div class="col-xs-6 col-sm-6 mb-2 col-lg-3 col-md-4 ">
         <div class="card">
@@ -188,45 +168,55 @@
         </div>
       </div>
     </template>
-    
-    
+
+
     <!--Formas de pago, envíos, polit de cambios-->
-    <div class="m-5 p-5 text-center">
-      <div class="swiper mySwiper m-4 p-5">
+    <div class="m-4 py-5 text-center p-0">
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-    
+
             <div class="swiper-slide slide">
-              <div class="p-2 slide-box">
-                <img src="../assets/dollar-circle.png" alt="" class="slide-img w-25 h-25 m-auto">
-                <p class="slide-text">Formas de pago</p>
+              <div class="slide-box">
+                <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalPagos">
+                  <img src="../assets/dollar-circle.png" alt="" class="slide-img w-25 h-25 m-auto">
+                  <p class="slide-text">Formas de pago</p>
+                </button>
               </div>
             </div>
-    
+
             <div class="swiper-slide slide">
-              <div class="p-2 slide-box">
-                <img src="../assets/truck-fast.png" alt="" class="slide-img w-25 h-25 m-auto">
-                <p class="slide-text">Envíos</p>
+              <div class="slide-box">
+                <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalEnvios">
+                  <img src="../assets/truck-fast.png" alt="" class="slide-img w-25 h-25 m-auto">
+                  <p class="slide-text">Envíos</p>
+                </button>
               </div>
             </div>
-    
+
             <div class="swiper-slide slide">
-              <div class="p-2 slide-box">
-                <img src="../assets/box-pack.png" alt="" class="slide-img w-25 h-25 m-auto">
-                <p class="slide-text">Política de cambios</p>
+              <div class="slide-box">
+                <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCambios"> 
+                  <img src="../assets/box-pack.png" alt="" class="slide-img w-25 h-25 m-auto">
+                  <p class="slide-text">Política de cambios</p>
+                </button>
               </div>
             </div>
-    
+
             <div class="swiper-slide slide">
-              <div class="p-2 slide-box">
-                <img src="../assets/take-care.png" alt="" class="slide-img w-25 h-25 m-auto">
-                <p class="slide-text">Cómo cuidar mi bikini</p>
+              <div class="slide-box">
+                <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCuidados">
+                  <img src="../assets/take-care.png" alt="" class="slide-img w-25 h-25 m-auto">
+                  <p class="slide-text">Cómo cuidar mi bikini</p>
+                </button>
               </div>
             </div>
-    
+
             <div class="swiper-slide slide">
-              <div class="p-2 slide-box">
-                <img src="../assets/table-size.png" alt="" class="slide-img w-25 h-25 m-auto">
-                <p class="slide-text">Tabla de talles</p>
+              <div class="slide-box">
+                <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalTalles">
+                  <img src="../assets/table-size.png" alt="" class="slide-img w-25 h-25 m-auto">
+                  <p class="slide-text">Tabla de talles</p>
+                </button>
               </div>
             </div>
             
@@ -237,11 +227,118 @@
         
       </div>
     </div>
-    
-    
-    <!--Footer-->
-    <footer class="text-center pt-5">
-    
+
+    <!-- Modal FORMAS DE PAGO-->
+    <div class="modal fade" id="modalPagos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content px-5 py-2">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row d-flex align-items-center">
+            <div class="col text-center">
+              <img src="../assets/dollar-circle.png" alt="" class="slide-img w-25 h-25 m-auto">
+              <p class="slide-text fw-bold">Formas de pago</p>
+            </div>
+            <div class="col">
+              <p class="text-muted">Efectivo, transferencia bancaria o link de mercado pago (con un recargo de 10% por retenciones de la página)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ENVIOS-->
+    <div class="modal fade" id="modalEnvios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content px-5 py-2">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row d-flex align-items-center">
+            <div class="col text-center">
+              <img src="../assets/truck-fast.png" alt="" class="slide-img w-25 h-25 m-auto">
+              <p class="slide-text">Información de envíos</p>
+            </div>
+            <div class="col">
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae id, sit error, soluta aliquid amet architecto libero unde quas quibusdam cupiditate nostrum hic, suscipit eligendi illum laboriosam qui accusamus assumenda.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal CAMBIOS-->
+    <div class="modal fade" id="modalCambios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content px-5 py-2">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row d-flex align-items-center">
+            <div class="col text-center">
+              <img src="../assets/box-pack.png" alt="" class="slide-img w-25 h-25 m-auto">
+              <p class="slide-text">Política de cambios</p>
+            </div>
+            <div class="col">
+              <p class="text-muted">Sólo se cambiarán prendas que estén en buen estado, sin uso y con las etiquetas puestas. No es necesario presentar ninguna documentación.
+                Los cambios se realizan hasta 7 días después de recibida la compra.                
+                En caso de tener algún inconveniente con la prenda, escribinos a : santabarbaratuc@gmail.com Nos aseguraremos de brindarte la mejor atencion personalizada.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal COMO CUIDAR MI BIKINI-->
+    <div class="modal fade" id="modalCuidados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content px-5 py-2">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row d-flex align-items-center">
+            <div class="col text-center">
+              <img src="../assets/take-care.png" alt="" class="slide-img w-25 h-25 m-auto">
+              <p class="slide-text">Cómo cuidar mi bikini</p>
+            </div>
+            <div class="col">
+              <p class="text-muted">Lavar a mano con agua fría y jabón neutro.
+                No retorcer.
+                Evitar el roce de la prenda con las superficies ásperas.
+                Secar a la sombra.
+                No guardar la prenda húmeda.
+                No lavar en lavarropa.
+                
+                ¡IMPORTANTE!
+                El cloro y los químicos pueden afectar los colores de tu prenda (en especial los colores fluo)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal TABLA DE TALLES-->
+    <div class="modal fade" id="modalTalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content px-5 py-2">
+          <div class="modal-header">
+            <p class="slide-text fw-bolder">Tabla de talles</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body row d-flex align-items-center">
+              <img src="../assets/centrotablatalles.png" alt="" class="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <!--Footer-->
+  <footer class="text-center pt-5">
+
     <!-- Newsletter-->
     <div class="text-center">
         <div class="container p-4">
@@ -252,7 +349,7 @@
                       <p class="m-0 p-0"><strong>SUSCRIBITE AL NEWSLETTER</strong></p>
                       <p class="m-0">Para recibir ofertas y novedades en tu mail</p>
                   </div>
-    
+
                   <div class="newsl-sty-2 text-center"> 
                       <img src="../assets/mail.png"/>
                   </div>
@@ -266,17 +363,17 @@
               </div>
             </form>
           </section>
-    
+
         </div>
     
     </div>
-    
-    
+
+
     <!--Adorno de Ola-->
     <div class="ola-divided py-4">
-      <img src="../assets/olaOscuro.png" class="w-750" alt="ola">
+      <img src="../assets/olaOscuro.png" class="w-50" alt="ola">
     </div>
-    
+
     
     <!--Footer-->
         <section class="">
@@ -301,18 +398,18 @@
                   <img src="../assets/insta.png" alt="">
                   <img src="../assets/face.png" alt="">                 
               </div>
-    
+
               <div class="col-md-6 footer-right">
                 <div class="container text-center">
                     <div class="row">
-    
+
                       <!--Tienda-->
                         <div class="col-md-3 col-xs-6 mt-3">
                             <a href="./products.html"><h6 class="text-uppercase fw-bold mb-2">Tienda</h6></a>
-                            <p><a href="./products.html#bikinis" class="text-reset textoLink">BIKINIS</a></p>
-                            <p><a href="./products.html#enteras" class="text-reset">ENTERAS</a></p>
-                            <p><a href="./products.html#conjuntos" class="text-reset">CONJUNTOS</a> </p>
-                            <p><a href="./products.html#buzos" class="text-reset">BUZOS</a></p>
+                            <p><a href="./bikinis.html" class="text-reset textoLink">BIKINIS</a></p>
+                            <p><a href="./enteras.html" class="text-reset">ENTERAS</a></p>
+                            <p><a href="./conjuntos.html" class="text-reset">CONJUNTOS</a> </p>
+                            <p><a href="./conjuntos.html" class="text-reset">BUZOS</a></p>
                         </div>
                         
                         <!--Ayuda--> 
@@ -322,6 +419,7 @@
                             <p><a href="./infohelp.html#tabla" class="text-reset">TABLA DE TALLES</a></p>
                             <p><a href="./infohelp.html#cuidado" class="text-reset">CÓMO CUIDAR MI BIKINI</a></p>
                             <p><a href="./infohelp.html#cambio" class="text-reset">POLITICA DE CAMBIOS</a></p>
+                            <p><a href="./infohelp.html#pago" class="text-reset">FORMAS DE PAGO</a></p>
                         </div>
                         
                         <!--Quienes somos-->
@@ -332,8 +430,6 @@
                         <!--Contacto-->
                         <div class="col-md-3 col-sm-6 mt-3">
                             <a href="./contact.html"><h6 class="text-uppercase fw-bold mb-2">Contacto</h6></a>
-                            <p><a href="#!" class="text-reset">ESCRIBINOS</a></p>
-                            <p><a href="#!" class="text-reset">SEGUINOS</a></p>
                         </div>
                     </div>
                 </div>
@@ -349,33 +445,27 @@
         <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
             BY SANTA BARBARA
         </div>
-    
+
         
         <a><img src="../assets/whats1.png" alt="Whatsapp-Logo-PNG" class="wsppFixed"></a>
-    </footer>
-    
-    
-    
+  </footer>
+
+
+
     <!--Cierre-->
-
-
-
-</div>
-    
 
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Busqueda -->
-    <script src="/js/search.js"></script>
+    
     <!--Main.js-->
     <script src="../js/main.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 0,
           slidesPerGroup: 1,
           loop: true,
           loopFillGroupWithBlank: true,
