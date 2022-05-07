@@ -91,7 +91,34 @@
     width: 0.6rem;
     left: 0.5rem;
     right: 0.4rem;
-    top: 0.6rem; } }
+    top: 0.6rem; }
+  .navbar {
+    padding: 1rem 0 0 0 !important; }
+  .container-fluid {
+    padding: 1rem 0 0 0 !important; }
+  .navbar-mobile {
+    margin-left: 0;
+    background-color: #FE98B5;
+    padding-left: 2rem;
+    padding-top: 1rem; }
+  a.nav-link {
+    font-size: 1rem;
+    color: #D62A5B !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif; }
+    a.nav-link:hover {
+      color: #ac2149; }
+  .color-search {
+    color: #D62A5B; }
+  .dropdown-menu {
+    margin: 0 2rem;
+    padding-left: 1rem;
+    border: none;
+    background-color: #FE98B5; }
+    .dropdown-menu .dropdown-item {
+      color: #FFFFFF;
+      text-transform: uppercase; } }
 
 @media only screen and (max-width: 900px) {
   .carrusel-title {
