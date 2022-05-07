@@ -25,6 +25,33 @@
 </head>
 <body>
       
+
+  <div id="container-main-search">
+
+    <button id="close-search">X</button>
+      <div class="container-search">
+          <div>
+              <input id="input-search" type="text" placeholder="Buscar un producto">
+              
+          </div>
+          <div>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.8958 17.5833H18.6702L18.2463 17.1594C19.7571 15.4096 20.6667 13.1356 20.6667 10.6458C20.6667 5.11125 16.1804 0.625 10.6458 0.625C5.11125 0.625 0.625 5.11125 0.625 10.6458C0.625 16.1804 5.11125 20.6667 10.6458 20.6667C13.1356 20.6667 15.4096 19.7571 17.1594 18.254L17.5833 18.6779V19.8958L25.2917 27.5887L27.5887 25.2917L19.8958 17.5833ZM10.6458 17.5833C6.81479 17.5833 3.70833 14.4769 3.70833 10.6458C3.70833 6.81479 6.81479 3.70833 10.6458 3.70833C14.4769 3.70833 17.5833 6.81479 17.5833 10.6458C17.5833 14.4769 14.4769 17.5833 10.6458 17.5833Z" fill="white"/>
+              </svg>
+          </div>
+      </div>
+      <div id="container-list-search">
+          <ul id="list-searchs">
+  
+          </ul>
+      </div>
+  </div>
+
+  <div id="body-content">
+
+
+
+
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light p-3 nav-bar-sty">
       <div class="container-fluid">
@@ -62,7 +89,7 @@
 
           </ul>
           <form class="d-flex">
-            <button class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
+            <button id="openSearch" class="btn btn-outline" type="submit"><img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/></button>
           </form>
         </div>
         
@@ -120,7 +147,14 @@
         <a class="text-vertodo" href="./bikinis.html">ver todas ></a>
       </div>
 
-      <div class="row" id="bikinis"></div>
+      <div class="swiper-filter" id="bikinis">
+        <!-- Carousel de productos -->
+        <div class="swiper mySwiper2 my-4 swiper-filter-products">
+          <div id="swiper-bikini" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </div>
 
     <!--Enteras-->
@@ -134,7 +168,14 @@
         <a class="text-vertodo" href="./enteras.html">ver todas ></a>
       </div>
 
-      <div class="row" id="enteras"></div>
+      <div class="swiper-filter" id="enteras">
+        <!-- Carousel de productos -->
+        <div class="swiper mySwiper2 my-4 swiper-filter-products">
+          <div id="swiper-enteras" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </div>
 
     <!--Buzos y Conjuntos-->
@@ -148,7 +189,14 @@
         <a class="text-vertodo" href="./conjuntos.html">ver todos ></a>
       </div>
 
-      <div class="row" id="buzosyconjuntos"></div>
+      <div class="swiper-filter" id="buzosyconjuntos">
+        <!-- Carousel de productos -->
+        <div class="swiper mySwiper2 my-4 swiper-filter-products">
+          <div id="swiper-comfy" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
     </div>
 
 
@@ -430,8 +478,16 @@
         <a><img src="../assets/whats1.png" alt="Whatsapp-Logo-PNG" class="wsppFixed"></a>
   </footer>
 
+  </div>
+
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Busqueda -->
+    <script src="/js/search.js"></script>
+
+    <!-- SlideCategory -->
+    <script src="/js/filterProducts.js"></script>
 
     <!--JavaScript-->
     <script src="../js/main.js"></script>
@@ -452,6 +508,23 @@
             prevEl: ".swiper-button-prev",
           },
         });
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 4,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: false,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
       </script>
 </body>
 </html>

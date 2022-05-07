@@ -47,21 +47,11 @@ function buscardor_interno(){
 // Abre la pantalla del buscador
 document.getElementById('openSearch').addEventListener("click", (event)=>{
     event.preventDefault();
-    console.log('hola');
     document.body.style.background = "#FE98B5";
     document.querySelector('#container-main-search').style.display= "block";
     document.querySelector('#body-content').style.display = "none"
 })
 
-// document.getElementById('openSearch').onclick((event)=>{
-//     event.preventDefault();
-//     console.log('hola');
-//     document.body.style.background = "#FE98B5";
-//     document.querySelector('#container-main-search').style.display= "";
-        
-
-//     }
-// );
 
 // Cerrar la pantalla del buscador
 document.getElementById('close-search').onclick = () =>{
