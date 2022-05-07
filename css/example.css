@@ -226,7 +226,7 @@ body footer {
   grid-template-rows: 15% 85%;
   grid-row-gap: 1rem;
   grid-template-areas: "title title title title" "categ1 categ2 categ3 categ4"; }
-  .category-title, .productdest-title, .bikini-title {
+  .category-title, .productdest-title {
     position: absolute;
     left: 3rem;
     grid-area: title;
@@ -284,7 +284,7 @@ body footer {
   color: #FE336D;
   font-weight: bold; }
 
-.productdest-cardtitle, .text-vertodo {
+.productdest-cardtitle {
   color: #959595;
   font-family: "Montserrat", sans-serif; }
 
@@ -331,6 +331,9 @@ body footer {
     width: 1px;
     height: 1px; } }
 
+.hover-text :hover {
+  color: #FE336D; }
+
 .info-sty {
   max-width: 100%;
   border: 0;
@@ -353,8 +356,19 @@ body footer {
   width: 100%;
   height: 100%; }
 
+.bikini-title {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #959595; }
+
 .text-vertodo {
-  text-decoration: none; }
+  color: #959595;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: right; }
   .text-vertodo:hover {
     color: #fd0149; }
 

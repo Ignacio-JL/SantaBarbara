@@ -1,10 +1,17 @@
 .bikini-title{
-    @extend .category-title;
+    font-family: $tipografiaSecundaria;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #959595;
 }
 
 .text-vertodo{
-    @extend .productdest-cardtitle;
+    color: $colorGris;
+    font-family: $tipografiaPrincipal;
     text-decoration: none;
+    text-align: right;
     &:hover{
         color: darken($color: $colorRosaOscuro, $amount: 10);
     }
