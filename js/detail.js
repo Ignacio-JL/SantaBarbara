@@ -36,13 +36,24 @@ fetch(url)
                 </div>
         
                 <div class="detail-info">
-                    
-                    <h6>${product.type}</h6>
+                    <div class="detail-header-info">
+                        <h6>${product.type}</h6>
+                        <div>
+                            <a href="#"><img src="/assets/whats.png"></a>
+                            <a href="#"><img src="/assets/insta.png"></a>
+                            <a href="#"><img src="/assets/face.png"></a>
+                        </div>
+
+                    </div>
+
                     <h2>${product.name}</h2>
                     <h3>AR$ ${product.price},00</h3>
                     <p class="w-50">${product.description}</p>
-                    <div>
-                        <img src="/assets/ola.png" class="w-100" alt="ola">
+                    <hr>
+                    <h6>Talles disponibles</h6>
+                    <div class="talles">
+                    ${sizeGenerator(product.size)}
+                        <span>Tabla de talles</span>
                     </div>
                     
                 </div>
@@ -118,4 +129,24 @@ fetch(url)
         });
 
         swipperContent.innerHTML = nodo;   
+    }
+
+    function sizeGenerator(sizes){
+        let response = "";
+        if(sizes == "Único"){
+            return "<span>Talle único</span>"
+        }
+        else{
+            for(let i = 1; i<=3; i++){
+                if(sizes.includes(i)){
+                    response += `<span>${i}</span>`
+                }
+                else{
+                    response += `<span class="disable">${i}</span>`
+                }
+            }
+        }
+
+        return response;
+        
     }
