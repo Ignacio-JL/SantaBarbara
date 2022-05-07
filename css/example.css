@@ -356,6 +356,48 @@ body footer {
   width: 100%;
   height: 100%; }
 
+.informacion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "title texto"; }
+  .informacion-title {
+    grid-area: title; }
+  .informacion-text {
+    grid-area: texto; }
+
+@media only screen and (max-width: 500px) {
+  .informacion {
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: ". title ." "texto texto texto"; }
+    .informacion-title {
+      grid-area: title;
+      margin-top: 4rem; }
+    .informacion-text {
+      grid-area: texto; } }
+
+.informaciondos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "texto title"; }
+  .informaciondos-title {
+    grid-area: title; }
+  .informaciondos-text {
+    grid-area: texto; }
+
+@media only screen and (max-width: 500px) {
+  .informaciondos {
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: ". title ." "texto texto texto"; }
+    .informaciondos-title {
+      grid-area: title;
+      margin-top: 4rem; }
+    .informaciondos-text {
+      grid-area: texto; } }
+
 .bikini-title {
   font-family: "Nunito", sans-serif;
   font-style: normal;
