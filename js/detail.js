@@ -38,7 +38,7 @@ fetch(url)
                 <div class="detail-info">
                     <div class="detail-header-info">
                         <h6>${product.type}</h6>
-                        <div>
+                        <div class="redes-down">
                             <a href="#"><img src="/assets/whats.png"></a>
                             <a href="#"><img src="/assets/insta.png"></a>
                             <a href="#"><img src="/assets/face.png"></a>
@@ -48,12 +48,12 @@ fetch(url)
 
                     <h2>${product.name}</h2>
                     <h3>AR$ ${product.price},00</h3>
-                    <p class="w-50">${product.description}</p>
+                    <p>${product.description}</p>
                     <hr>
                     <h6>Talles disponibles</h6>
                     <div class="talles">
                     ${sizeGenerator(product.size)}
-                        <span>Tabla de talles</span>
+                        <span class="tablaTalles">Tabla de talles</span>
                     </div>
                     
                 </div>
@@ -106,8 +106,12 @@ fetch(url)
         // Generamos orden aleatorio
         prod.sort(()=>{return Math.random()-0.5});
 
-        let swipperContent = document.querySelector('#swiper-content');
-        swipperContent.innerHTML ='';
+        let swipperContent1 = document.querySelector('#swiper-content1');
+        swipperContent1.innerHTML ='';
+        let swipperContent2 = document.querySelector('#swiper-content2');
+        swipperContent2.innerHTML ='';
+        let swipperContent3 = document.querySelector('#swiper-content3');
+        swipperContent3.innerHTML ='';
         let nodo = '';
         prod.forEach(p => {
             nodo +=`
@@ -128,7 +132,9 @@ fetch(url)
             `
         });
 
-        swipperContent.innerHTML = nodo;   
+        swipperContent1.innerHTML = nodo;
+        swipperContent2.innerHTML = nodo; 
+        swipperContent3.innerHTML = nodo; 
     }
 
     function sizeGenerator(sizes){

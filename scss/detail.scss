@@ -1,10 +1,26 @@
 body{
+    .headerProduct{
+        margin: auto 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .redes{
+            display: none;
+            img{
+                margin-right: 1rem;
+                height: 27px;
+            }
+        }
+    }
     
     .swiper {
         width: auto !important;
         height: 100%;
         margin-left: 4rem;
         margin-right: 4rem;
+    }
+    .mySwiper3,.mySwiper4{
+        display: none;
     }
     .swiper-filter{
         .swiper-filter-products{
@@ -117,9 +133,10 @@ body{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                
                 img{
                     margin-right: 1rem;
-                    height: 25px;
+                    height: 27px;
                 }
                 h6{
                 
@@ -139,7 +156,7 @@ body{
             }
             .talles{
                 font-family: $tipografiaPrincipal;
-                span{
+                span:not(.tablaTalles){
                     border: 2px solid #959595;
                     color: #959595;
                     border-radius: 4px;
@@ -254,5 +271,74 @@ body{
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
+    }
+}
+@media (max-width: 1023px){
+    body{
+        .mySwiper3{
+            display: block;
+            
+        }
+        .mySwiper2{
+            display: none;
+            
+        }
+        
+    }
+}
+@media (max-width: 768px){
+    body{
+        #container-detail{
+            margin-top: -60px;
+        }
+        #swiper-content3{
+            .swiper-slide{
+                width: 230px !important;
+            }
+        }
+        .headerProduct{
+            
+            .redes{
+                display: block;
+                
+            }
+        }
+        .mySwiper4{
+            display: block;
+        }
+        .mySwiper3{
+            display: none;
+            
+        }
+        .mySwiper2{
+            display: none;
+            
+        }
+
+        .detail-grid{
+            display: block;
+            .detail-images{
+                margin-top: 30px;
+            }
+            .detail-button{
+                button{
+                    bottom: 0;
+                    top: 1rem;
+                    width: 100%;
+
+                }
+            }
+        }
+        .detail-info{
+            .detail-header-info{
+                .redes-down{
+                    display: none;
+                }
+            }
+        }
+        .redes-down{
+            display: none;
+        }
+
     }
 }
