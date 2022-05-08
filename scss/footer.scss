@@ -65,6 +65,14 @@ body{
         &-mailbox{
             border-radius: 1rem 0 0 1rem;
         }
+        h4#mailOkNL{
+            display: none;
+            span{
+                font-family: FontAwesome; 
+                color: #FE336D;
+                margin-left: 10px;
+            }
+        }
     }
 
     &-button{

@@ -132,21 +132,25 @@
                       <p>Envianos un mensaje con sugerencias o recomendacciones.</p>
                     </div>
                     <div class="contact-col-2">
-                      <form action="">
+                      <form id="formulario" >
                         <div>
-                          <input type="text" placeholder="nombre">
+                          <input type="text" placeholder="nombre" name="Nombre">
                         </div>
                         <div>
-                          <input type="text" placeholder="apellido">
+                          <input type="text" placeholder="apellido" name="Apellido">
                         </div>
                         <div>
-                          <input type="email" placeholder="email">
+                          <input type="email" placeholder="email" name="Email">
                         </div>
                         <div>
-                          <textarea type="text" placeholder="mensaje"></textarea>
+                          <textarea name="Mensaje" type="text" placeholder="mensaje"></textarea>
                         </div>
-                        <button type="submit">Enviar</button>
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_subject" value="Consulta a Santa Barbara">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button id="btn-myform" type="submit">Enviar</button>
                       </form>
+                      <h4 id="mailOk">Tu Mensaje se envio correctamente<span>&#xf00c;</span></h4>
         
                     </div>
                   </div>
@@ -361,23 +365,30 @@
         <div class="text-center">
             <div class="container p-4">
               <section class="">
-                <form action="">
+                <form id="formularioNL">
                   <div class="row newsl-sty">
                       <div class="newsl-sty-1">
                           <p class="m-0 p-0"><strong>SUSCRIBITE AL NEWSLETTER</strong></p>
                           <p class="m-0">Para recibir ofertas y novedades en tu mail</p>
                       </div>
-    
+      
                       <div class="newsl-sty-2 text-center"> 
                           <img src="../assets/mail.png"/>
                       </div>
                       
                       <div class="newsl-sty-3">
-                          <div class="form-outline mb-4 d-flex flex-row">
-                              <input type="email" id="form5Example2" class="form-control newsl-sty-3-mailbox" placeholder="Ingresa tu mail">
-                              <input type="button" class="btn newsl-sty-button px-2" value="Enviar">
+                        <div class="form-outline mb-4 d-flex flex-row">
+                            <input name="Email" type="email" id="form5Example2" class="form-control newsl-sty-3-mailbox" placeholder="Ingresa tu mail">
+                            <input type="hidden" name="Mensaje" value="Hola! Quiero suscribirme al Newsletter de Santa Barbara">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_subject" value="Suscripción a Santa Barbara">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="submit" id="btnNL" class="btn newsl-sty-button px-2" value="Enviar">
+                            
+                            
                           </div>
-                      </div>
+                          <h4 id="mailOkNL">Suscripción realizada<span>&#xf00c;</span></h4>
+                    </div>
                   </div>
                 </form>
               </section>
@@ -476,9 +487,15 @@
     
     <!-- Busqueda -->
     <script src="/js/search.js"></script>
+
+    <!-- Newsletter -->
+    <script src="/js/newsletter.js"></script>
     
     <!-- contact.js -->
     <script src="/js/contact.js"></script>
+
+    <!-- mail -->
+    <script src="/js/mail.js"></script>
 
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

@@ -131,6 +131,19 @@ body{
             margin-bottom: 1.5rem;
             margin-top: 1rem;
         }
+        
+    }
+    h4#mailOk{
+        display: none;
+        color: $colorRosaOscuro;
+        font-weight: 700;
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+        span{
+            font-family: FontAwesome; 
+            color: #FE336D;
+            margin-left: 12px;
+        }
     }
     h2{
         font-weight: 800;

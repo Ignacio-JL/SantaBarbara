@@ -400,23 +400,30 @@
     <div class="text-center">
         <div class="container p-4">
           <section class="">
-            <form action="">
+            <form id="formularioNL">
               <div class="row newsl-sty">
                   <div class="newsl-sty-1">
                       <p class="m-0 p-0"><strong>SUSCRIBITE AL NEWSLETTER</strong></p>
                       <p class="m-0">Para recibir ofertas y novedades en tu mail</p>
                   </div>
-
+  
                   <div class="newsl-sty-2 text-center"> 
                       <img src="../assets/mail.png"/>
                   </div>
                   
                   <div class="newsl-sty-3">
-                      <div class="form-outline mb-4 d-flex flex-row">
-                          <input type="email" id="form5Example2" class="form-control newsl-sty-3-mailbox" placeholder="Ingresa tu mail">
-                          <input type="button" class="btn newsl-sty-button px-2" value="Enviar">
+                    <div class="form-outline mb-4 d-flex flex-row">
+                        <input name="Email" type="email" id="form5Example2" class="form-control newsl-sty-3-mailbox" placeholder="Ingresa tu mail">
+                        <input type="hidden" name="Mensaje" value="Hola! Quiero suscribirme al Newsletter de Santa Barbara">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_subject" value="Suscripción a Santa Barbara">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="submit" id="btnNL" class="btn newsl-sty-button px-2" value="Enviar">
+                        
+                        
                       </div>
-                  </div>
+                      <h4 id="mailOkNL">Suscripción realizada<span>&#xf00c;</span></h4>
+                </div>
               </div>
             </form>
           </section>
@@ -514,6 +521,9 @@
 
     <!-- Busqueda -->
     <script src="/js/search.js"></script>
+
+    <!-- Newsletter -->
+    <script src="/js/newsletter.js"></script>
 
     <!-- SlideCategory -->
     <script src="/js/filterProducts.js"></script>
