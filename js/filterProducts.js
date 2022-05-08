@@ -25,16 +25,34 @@ fetch("/js/stock.json")
         let swipperContentBikini = document.querySelector('#swiper-bikini');
         swipperContentBikini.innerHTML ='';
         swipperContentBikini.innerHTML = nodeGenerator(bikinis);
+        let swipperContentBikini2 = document.querySelector('#swiper-bikini2');
+        swipperContentBikini2.innerHTML ='';
+        swipperContentBikini2.innerHTML = nodeGenerator(bikinis);
+        let swipperContentBikini3 = document.querySelector('#swiper-bikini3');
+        swipperContentBikini3.innerHTML ='';
+        swipperContentBikini3.innerHTML = nodeGenerator(bikinis);
 
         // Generamos slide Enterizas
         let swipperContentEnteriza = document.querySelector('#swiper-enteras');
         swipperContentEnteriza.innerHTML ='';
         swipperContentEnteriza.innerHTML = nodeGenerator(enterizas);
+        let swipperContentEnteriza2 = document.querySelector('#swiper-enteras2');
+        swipperContentEnteriza2.innerHTML ='';
+        swipperContentEnteriza2.innerHTML = nodeGenerator(enterizas);
+        let swipperContentEnteriza3 = document.querySelector('#swiper-enteras3');
+        swipperContentEnteriza3.innerHTML ='';
+        swipperContentEnteriza3.innerHTML = nodeGenerator(enterizas);
 
         // Generamos slide Comfys
         let swipperContentComfy = document.querySelector('#swiper-comfy');
         swipperContentComfy.innerHTML ='';
         swipperContentComfy.innerHTML = nodeGenerator(comfy);
+        let swipperContentComfy2 = document.querySelector('#swiper-comfy2');
+        swipperContentComfy2.innerHTML ='';
+        swipperContentComfy2.innerHTML = nodeGenerator(comfy);
+        let swipperContentComfy3 = document.querySelector('#swiper-comfy3');
+        swipperContentComfy3.innerHTML ='';
+        swipperContentComfy3.innerHTML = nodeGenerator(comfy);
 
 
         // let nodo = '';
