@@ -49,8 +49,8 @@ fetch(url)
                     <div class="detail-header-info">
                         <h6>${product.type}</h6>
                         <div class="redes-down">
-                            <a href="#"><img src="/assets/whats.png"></a>
-                            <a href="#"><img src="/assets/insta.png"></a>
+                            <a href="https://walink.co/a39c26 " target="_blank"><img src="../assets/whats.png" alt=""></a>
+                            <a href="https://www.instagram.com/santabarbara_bikinis/" target="_blank"><img src="../assets/insta.png" alt=""></a>
                             <a href="#"><img src="/assets/face.png"></a>
                         </div>
 
