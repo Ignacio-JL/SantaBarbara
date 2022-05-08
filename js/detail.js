@@ -132,15 +132,16 @@ fetch(url)
             
         }
 
-        count+=3;
-        for (let i = 3; i <= count; i++) {
+        let aux = count;
+        aux+=3;
+        for (let i = 4; i <= aux; i++) {
             document.getElementById('selection-' + i).style.border='none'
             document.getElementById(`selection-${i}`).onclick = ()=>{
                 // document.getElementById('selection-' + i).style.border = '3px solid #FE336D'
                 if(i==4){
                     document.getElementById('selection-4').style.border = '3px solid #FE336D'
                     document.getElementById('selection-5').style.border= 'none'
-                    if(count==6){
+                    if(aux==6){
                         document.getElementById('selection-6').style.border= 'none'
                     }
                     document.getElementById('image-main').src=`${product.image[0]}`
@@ -148,12 +149,12 @@ fetch(url)
                 if(i==5){
                     document.getElementById('selection-5').style.border = '3px solid #FE336D'
                     document.getElementById('selection-4').style.border= 'none'
-                    if(count==6){
+                    if(aux==6){
                         document.getElementById('selection-6').style.border= 'none'
                     }
                     document.getElementById('image-main').src=`${product.image[1]}`
                 }
-                if(count==6 && i==6){
+                if(aux==6 && i==6){
                     document.getElementById('selection-6').style.border = '3px solid #FE336D'
                     document.getElementById('selection-4').style.border= 'none'
                     document.getElementById('selection-5').style.border= 'none'
