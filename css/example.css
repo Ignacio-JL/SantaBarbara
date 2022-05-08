@@ -195,6 +195,12 @@ body footer {
     grid-area: three; }
     .newsl-sty-3-mailbox {
       border-radius: 1rem 0 0 1rem; }
+    .newsl-sty-3 h4#mailOkNL {
+      display: none; }
+      .newsl-sty-3 h4#mailOkNL span {
+        font-family: FontAwesome;
+        color: #FE336D;
+        margin-left: 10px; }
   .newsl-sty-button {
     background: #FE336D;
     border-radius: 0 1rem 1rem 0;
@@ -672,6 +678,12 @@ body .detail-grid {
       height: 45px;
       border-radius: 5px;
       background: #FE336D; }
+    body .detail-grid .detail-info span button {
+      bottom: 0;
+      color: #959595;
+      border: none;
+      background: none;
+      width: auto; }
     body .detail-grid .detail-info .btn-modals-detail {
       display: flex;
       height: 50%; }
@@ -881,7 +893,7 @@ body #body-main-content {
     body #body-main-content h4#mailOk span {
       font-family: FontAwesome;
       color: #FE336D;
-      margin-left: 10px; }
+      margin-left: 12px; }
   body #body-main-content h2 {
     font-weight: 800;
     color: #FE336D; }

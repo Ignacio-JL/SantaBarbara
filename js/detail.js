@@ -63,7 +63,10 @@ fetch(url)
                     <h6>Talles disponibles</h6>
                     <div class="talles">
                     ${sizeGenerator(product.size)}
-                        <span class="tablaTalles">Tabla de talles</span>
+                        <span class="tablaTalles"><button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalTalles">
+                        
+                        Tabla de talles
+                        </button></span>
                     </div>
                     <div class="btn-modals-detail">
 

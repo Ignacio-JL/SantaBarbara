@@ -205,6 +205,13 @@ body{
                 border-radius: 5px;
                 background: $colorRosaOscuro;
             }
+            span button{
+                bottom: 0;
+                color: #959595;
+                border: none;
+                background: none;
+                width: auto;
+            }
             .btn-modals-detail{
                 display: flex;
                 height: 50%;
