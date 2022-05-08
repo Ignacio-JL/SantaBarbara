@@ -34,15 +34,50 @@ fetch(url)
                 <div class="detail-image">
                     <img id="image-main" src="${product.image[0]}" alt="">
                 </div>
+                <div class="detail-images inMobile">
+                    ${imagesProduct}
+                    
+                </div>
         
                 <div class="detail-info">
-                    
-                    <h6>${product.type}</h6>
+                    <div class="detail-header-info">
+                        <h6>${product.type}</h6>
+                        <div class="redes-down">
+                            <a href="#"><img src="/assets/whats.png"></a>
+                            <a href="#"><img src="/assets/insta.png"></a>
+                            <a href="#"><img src="/assets/face.png"></a>
+                        </div>
+
+                    </div>
+
                     <h2>${product.name}</h2>
                     <h3>AR$ ${product.price},00</h3>
-                    <p class="w-50">${product.description}</p>
-                    <div>
-                        <img src="/assets/ola.png" class="w-100" alt="ola">
+                    <p>${product.description}</p>
+                    <hr>
+                    <h6>Talles disponibles</h6>
+                    <div class="talles">
+                    ${sizeGenerator(product.size)}
+                        <span class="tablaTalles">Tabla de talles</span>
+                    </div>
+                    <div class="btn-modals-detail">
+
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCuidados">
+                        <img src="../assets/take-care.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalEnvios">
+                        <img src="../assets/truck-fast.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalPagos">
+                        <img src="../assets/dollar-circle.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCambios"> 
+                        <img src="../assets/box-pack.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      
                     </div>
                     
                 </div>
@@ -95,8 +130,12 @@ fetch(url)
         // Generamos orden aleatorio
         prod.sort(()=>{return Math.random()-0.5});
 
-        let swipperContent = document.querySelector('#swiper-content');
-        swipperContent.innerHTML ='';
+        let swipperContent1 = document.querySelector('#swiper-content1');
+        swipperContent1.innerHTML ='';
+        let swipperContent2 = document.querySelector('#swiper-content2');
+        swipperContent2.innerHTML ='';
+        let swipperContent3 = document.querySelector('#swiper-content3');
+        swipperContent3.innerHTML ='';
         let nodo = '';
         prod.forEach(p => {
             nodo +=`
@@ -117,5 +156,27 @@ fetch(url)
             `
         });
 
-        swipperContent.innerHTML = nodo;   
+        swipperContent1.innerHTML = nodo;
+        swipperContent2.innerHTML = nodo; 
+        swipperContent3.innerHTML = nodo; 
+    }
+
+    function sizeGenerator(sizes){
+        let response = "";
+        if(sizes == "Único"){
+            return "<span>Talle único</span>"
+        }
+        else{
+            for(let i = 1; i<=3; i++){
+                if(sizes.includes(i)){
+                    response += `<span>${i}</span>`
+                }
+                else{
+                    response += `<span class="disable">${i}</span>`
+                }
+            }
+        }
+
+        return response;
+        
     }
