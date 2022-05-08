@@ -173,10 +173,12 @@ body footer {
     z-index: 9999;
     bottom: 6%;
     right: 6%;
-    width: 8%; }
+    width: 5%; }
   @media only screen and (max-width: 500px) {
     body footer .footer-logo {
-      width: 50%; } }
+      width: 50%; }
+    body footer .wsppFixed {
+      width: 10%; } }
 
 .newsl-sty {
   display: grid;
