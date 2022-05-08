@@ -382,7 +382,7 @@
       <div class="text-center">
           <div class="container p-4">
             <section class="">
-              <form action="">
+              <form id="formularioNL">
                 <div class="row newsl-sty">
                     <div class="newsl-sty-1">
                         <p class="m-0 p-0"><strong>SUSCRIBITE AL NEWSLETTER</strong></p>
@@ -395,8 +395,15 @@
                     
                     <div class="newsl-sty-3">
                         <div class="form-outline mb-4 d-flex flex-row">
-                            <input type="email" id="form5Example2" class="form-control newsl-sty-3-mailbox" placeholder="Ingresa tu mail">
-                            <input type="button" class="btn newsl-sty-button px-2" value="Enviar">
+                            <input name="Email" type="email" id="form5Example2" class="form-control newsl-sty-3-mailbox" placeholder="Ingresa tu mail">
+                            <input type="hidden" name="Mensaje" value="Hola! Quiero suscribirme al Newsletter de Santa Barbara">
+                            <input type="hidden" name="_template" value="box">
+                            <input type="hidden" name="_subject" value="Suscripción a Santa Barbara">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="submit" id="btnNL" class="btn newsl-sty-button px-2" value="Enviar">
+                            <div>
+                              <h4 id="mailOkNL">Suscripción realizada<span>&#xf00c;</span></h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -501,9 +508,13 @@
     <!-- Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Newsletter -->
+    <script src="/js/newsletter.js"></script>
+
     <!-- Busqueda -->
     <script src="/js/search.js"></script>
     
+
     <!--Main.js-->
     <script src="../js/main.js"></script>
     <script>

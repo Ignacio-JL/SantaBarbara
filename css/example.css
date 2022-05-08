@@ -872,6 +872,16 @@ body #body-main-content {
     padding: 0.7rem;
     margin-bottom: 1.5rem;
     margin-top: 1rem; }
+  body #body-main-content h4#mailOk {
+    display: none;
+    color: #FE336D;
+    font-weight: 700;
+    margin-top: -1rem;
+    margin-bottom: -2rem; }
+    body #body-main-content h4#mailOk span {
+      font-family: FontAwesome;
+      color: #FE336D;
+      margin-left: 10px; }
   body #body-main-content h2 {
     font-weight: 800;
     color: #FE336D; }
