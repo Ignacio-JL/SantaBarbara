@@ -183,6 +183,27 @@
                     <div class="talles">
                       <span>1</span><span>2</span><span class="disable">3</span><span>Tabla de talles</span>
                     </div>
+
+                    <div class="btn-modals-detail">
+
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCuidados">
+                        <img src="../assets/take-care.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalEnvios">
+                        <img src="../assets/truck-fast.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalPagos">
+                        <img src="../assets/dollar-circle.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCambios"> 
+                        <img src="../assets/box-pack.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      
+                    </div>
                 </div>
         
                 <div class="detail-images">
@@ -197,6 +218,7 @@
                     </div>
                     
                 </div>
+
                 <div class="detail-button">
                     <button>Continuar</button>
                 </div>
@@ -204,6 +226,105 @@
             </div>
     
         </div>
+        <!-- modales -->
+
+        <div class="modales">
+          <!-- Modal FORMAS DE PAGO-->
+          <div class="modal fade" id="modalPagos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content px-5 py-2">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row d-flex align-items-center">
+                  <div class="text-center">
+                    <img src="../assets/dollar-circle.png" alt="" class="slide-img w-25 h-25 m-auto">
+                    <p class="slide-text fw-bold">Formas de pago</p>
+                  </div>
+                  <div>
+                    <p class="text-muted">Efectivo, transferencia bancaria o link de mercado pago <br> (con un recargo de 10% por retenciones de la página)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Modal ENVIOS-->
+          <div class="modal fade" id="modalEnvios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content px-5 py-2">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row d-flex align-items-center">
+                  <div class="text-center">
+                    <img src="../assets/truck-fast.png" alt="" class="slide-img w-25 h-25 m-auto">
+                    <p class="slide-text">Información de envíos</p>
+                  </div>
+                  <div>
+                    <p class="text-muted">En la provincia de Tucumán podes pasar a retirar tu pedido en un punto de entrega. 
+                      <br> Los envíos se realizan todos los días en horarios a convenir del cliente, donde el costo varia según ubicación.
+                      <br> Envíos a todo el país mediante Correo Argentino.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Modal CAMBIOS-->
+          <div class="modal fade" id="modalCambios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+              <div class="modal-content px-5 py-2">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row d-flex align-items-center">
+                  <div class="text-center">
+                    <img src="../assets/box-pack.png" alt="" class="slide-img w-25 h-25 m-auto">
+                    <p class="slide-text">Política de cambios</p>
+                  </div>
+                  <div>
+                    <p class="text-muted">Sólo se cambiarán prendas que estén en buen estado, sin uso y con las etiquetas puestas. 
+                      <br> No es necesario presentar ninguna documentación.
+                      <br> Los cambios se realizan hasta 7 días después de recibida la compra.                
+                      <br> En caso de tener algún inconveniente con la prenda, escribinos a : santabarbaratuc@gmail.com Nos aseguraremos de brindarte la mejor atencion personalizada.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- Modal COMO CUIDAR MI BIKINI-->
+          <div class="modal fade" id="modalCuidados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content px-5 py-2">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body row d-flex align-items-center">
+                  <div class="text-center">
+                    <img src="../assets/take-care.png" alt="" class="slide-img w-25 h-25 m-auto">
+                    <p class="slide-text">Cómo cuidar mi bikini</p>
+                  </div>
+                  <div>
+                    <p class="text-muted">Lavar a mano con agua fría y jabón neutro.
+                      <br> No retorcer.
+                      <br> Evitar el roce de la prenda con las superficies ásperas.
+                      <br> Secar a la sombra.
+                      <br> No guardar la prenda húmeda.
+                      <br> No lavar en lavarropa.
+                      <br> 
+                      <br> ¡IMPORTANTE!
+                      <br> El cloro y los químicos pueden afectar los colores de tu prenda (en especial los colores fluo)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- modales -->
     
         <!-- Otros productos -->
         <div class="container-ola">

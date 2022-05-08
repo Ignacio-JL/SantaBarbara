@@ -34,6 +34,10 @@ fetch(url)
                 <div class="detail-image">
                     <img id="image-main" src="${product.image[0]}" alt="">
                 </div>
+                <div class="detail-images inMobile">
+                    ${imagesProduct}
+                    
+                </div>
         
                 <div class="detail-info">
                     <div class="detail-header-info">
@@ -54,6 +58,26 @@ fetch(url)
                     <div class="talles">
                     ${sizeGenerator(product.size)}
                         <span class="tablaTalles">Tabla de talles</span>
+                    </div>
+                    <div class="btn-modals-detail">
+
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCuidados">
+                        <img src="../assets/take-care.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalEnvios">
+                        <img src="../assets/truck-fast.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalPagos">
+                        <img src="../assets/dollar-circle.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#modalCambios"> 
+                        <img src="../assets/box-pack.png" alt="" class="slide-img w-25 h-25 m-auto">
+                      </button>
+    
+                      
                     </div>
                     
                 </div>

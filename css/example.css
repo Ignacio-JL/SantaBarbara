@@ -516,7 +516,7 @@ body .swiper-button-next, body .swiper-rtl .swiper-button-prev, body .swiper-but
 
 body .detail-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 3fr 1fr;
   row-gap: 20px;
   column-gap: 45px;
@@ -589,6 +589,15 @@ body .detail-grid {
       height: 45px;
       border-radius: 5px;
       background: #FE336D; }
+    body .detail-grid .detail-info .btn-modals-detail {
+      display: flex;
+      height: 50%; }
+      body .detail-grid .detail-info .btn-modals-detail button {
+        width: 25%;
+        height: 50%;
+        padding: 0;
+        background: none;
+        bottom: 0; }
   body .detail-grid .detail-images {
     display: flex;
     flex-direction: row;
@@ -597,6 +606,8 @@ body .detail-grid {
       width: 30%; }
       body .detail-grid .detail-images .detail-images-container img {
         width: 100%; }
+  body .detail-grid .inMobile {
+    display: none; }
   body .detail-grid .detail-button {
     display: flex;
     flex-direction: column;
@@ -650,15 +661,31 @@ body .container-ola {
   body .mySwiper2 {
     display: none; }
   body .detail-grid {
-    display: block; }
-    body .detail-grid .detail-images {
-      margin-top: 30px; }
+    display: block;
+    margin: 2rem;
+    margin-top: 4rem; }
+    body .detail-grid .inMobile {
+      display: flex;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    body .detail-grid .detail-images:not(.inMobile) {
+      display: none; }
     body .detail-grid .detail-button button {
       bottom: 0;
       top: 1rem;
       width: 100%; }
   body .detail-info .detail-header-info .redes-down {
     display: none; }
+  body .detail-info .talles {
+    display: flex;
+    justify-content: center; }
+  body .detail-info .btn-modals-detail {
+    border-radius: 12px;
+    border: 1px solid #F0F0F0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
   body .redes-down {
     display: none; } }
 

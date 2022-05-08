@@ -117,7 +117,7 @@ body{
 
     .detail-grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 3fr 1fr;
         row-gap: 20px;
         column-gap: 45px;
@@ -170,14 +170,6 @@ body{
                     background-image: url("/assets/X.png");
                     background-repeat: no-repeat;
                     background-size: cover;
-                    // &::after{
-                    //     content: "X";
-                    //     position: relative;
-                    //     right: 8px;
-                    //     font-size: 20px;
-                        
-                        
-                    // }
                 }
             }
             font-family: $tipografiaPrincipal;
@@ -213,7 +205,20 @@ body{
                 border-radius: 5px;
                 background: $colorRosaOscuro;
             }
+            .btn-modals-detail{
+                display: flex;
+                height: 50%;
+                button{
+                    width: 25%;
+                    height: 50%;
+                    padding: 0;
+                    background: none;
+                    bottom: 0;
+                }
+            }
         }
+        
+
         .detail-images{
             display: flex;
             flex-direction: row;
@@ -226,6 +231,9 @@ body{
                     width: 100%;
                 }
             }
+        }
+        .inMobile{
+            display: none;
         }
         .detail-button{
             display: flex;
@@ -317,9 +325,18 @@ body{
 
         .detail-grid{
             display: block;
-            .detail-images{
-                margin-top: 30px;
+            margin: 2rem;
+            margin-top: 4rem;
+            .inMobile{
+                display: flex;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                
             }
+            .detail-images:not(.inMobile){
+                display: none;
+            }
+            
             .detail-button{
                 button{
                     bottom: 0;
@@ -334,6 +351,18 @@ body{
                 .redes-down{
                     display: none;
                 }
+            }
+            .talles{
+                display: flex;
+                justify-content: center;
+            }
+            .btn-modals-detail{
+                border-radius: 12px;
+                border: 1px solid #F0F0F0;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
             }
         }
         .redes-down{
