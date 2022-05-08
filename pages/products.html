@@ -166,8 +166,18 @@
 
       <div class="swiper-filter" id="bikinis">
         <!-- Carousel de productos -->
-        <div class="swiper mySwiper2 my-4 swiper-filter-products">
+        <div class="swiper mySwiper2  my-4 swiper-filter-products">
           <div id="swiper-bikini" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper3  my-4 swiper-filter-products">
+          <div id="swiper-bikini2" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper4  my-4 swiper-filter-products">
+          <div id="swiper-bikini3" class="swiper-wrapper"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
@@ -191,8 +201,18 @@
 
       <div class="swiper-filter" id="enteras">
         <!-- Carousel de productos -->
-        <div class="swiper mySwiper2 my-4 swiper-filter-products">
+        <div class="swiper mySwiper2  my-4 swiper-filter-products">
           <div id="swiper-enteras" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper3  my-4 swiper-filter-products">
+          <div id="swiper-enteras2" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper4  my-4 swiper-filter-products">
+          <div id="swiper-enteras3" class="swiper-wrapper"></div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
@@ -219,11 +239,20 @@
         <div class="swiper mySwiper2 my-4 swiper-filter-products">
           <div id="swiper-comfy" class="swiper-wrapper"></div>
           <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> 
+        </div>
+        <div class="swiper mySwiper3 my-4 swiper-filter-products">
+          <div id="swiper-comfy2" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper4 my-4 swiper-filter-products">
+          <div id="swiper-comfy3" class="swiper-wrapper"></div>
+          <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>
-
 
 
     <!--Formas de pago, envíos, polit de cambios-->
@@ -564,6 +593,40 @@
                 prevEl: ".swiper-button-prev",
               },
             });
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwiper3", {
+            slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: false,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwiper4", {
+            slidesPerView: 2,
+              spaceBetween: 30,
+              slidesPerGroup: 1,
+              loop: false,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            }); 
       </script>
 </body>
 </html>
