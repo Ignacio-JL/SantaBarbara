@@ -5,6 +5,9 @@ body{
         .mySwiper2{
             display: block;
         }
+        .mySwiper3{
+            display: none;
+        }
         .contact-bg{
             height: 120px;
             background-image: url(/assets/contact_bg.png);
@@ -161,5 +164,50 @@ body{
         }
     }
 
+    }
+}
+@media (min-width: 768px){
+    body{
+        #body-main-content{
+            .mySwiper2{
+                display: none;
+            }
+            .mySwiper3{
+                display: block;
+            }
+            .contact-flex{
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                display: flex;
+                flex-direction: row;
+                .contact-col-1{
+                    width: 50%;
+                }
+                .contact-col-2{
+                    width: 50%;
+                    form{
+                        button{
+                            position: relative;
+                            left: 60%;
+                            width: 40%;
+                        }
+
+                    }
+                }
+                
+            }
+            .follow-flex{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .follow-col-1{
+                    width: 30%;
+                }
+                .follow-col-2{
+                    width: 30%;
+                }
+
+            }
+        }
     }
 }

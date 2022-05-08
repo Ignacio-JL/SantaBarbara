@@ -15,6 +15,9 @@ fetch("/js/stock.json")
 
         let swipperContent1 = document.querySelector('#swiper-content1');
         swipperContent1.innerHTML ='';
+
+        let swipperContent2 = document.querySelector('#swiper-content2');
+        swipperContent2.innerHTML ='';
         
         let nodo = '';
         prodF.forEach(p => {
@@ -37,4 +40,5 @@ fetch("/js/stock.json")
         });
         
         swipperContent1.innerHTML = nodo;
+        swipperContent2.innerHTML = nodo;
     }

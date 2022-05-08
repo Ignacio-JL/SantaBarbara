@@ -110,31 +110,42 @@
         <div id="body-main-content">
           <h2>Contacto</h2>
           <div class="contact-bg text-center"></div>
-          <h2>Escribinos</h2>
-          <p>Envianos un mensaje con sugerencias o recomendacciones.</p>
-          <form action="">
-            <div>
-              <input type="text" placeholder="nombre">
+          <div class="contact-flex">
+            <div class="contact-col-1">
+              <h2>Escribinos</h2>
+              <p>Envianos un mensaje con sugerencias o recomendacciones.</p>
             </div>
-            <div>
-              <input type="text" placeholder="apellido">
+            <div class="contact-col-2">
+              <form action="">
+                <div>
+                  <input type="text" placeholder="nombre">
+                </div>
+                <div>
+                  <input type="text" placeholder="apellido">
+                </div>
+                <div>
+                  <input type="email" placeholder="email">
+                </div>
+                <div>
+                  <textarea type="text" placeholder="mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
+
             </div>
-            <div>
-              <input type="email" placeholder="email">
-            </div>
-            <div>
-              <textarea type="text" placeholder="mensaje"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
+          </div>
           <img class="w-100 olaContact" src="/assets/olaOscuro.png" alt="">
 
-          <h2>Seguinos</h2>
-          <p>Accedé en nuestros perfiles en las redes sociales.</p>
-          <div class="redesContact">
-            <a href=""><img src="/assets/whats.png" alt=""></a>
-            <a href=""><img src="/assets/insta.png" alt=""></a>
-            <a href=""><img src="/assets/face.png" alt=""></a>
+          <div class="follow-flex">
+            <div class="follow-col-1">
+              <h2>Seguinos</h2>
+              <p>Accedé en nuestros perfiles en las redes sociales.</p>
+            </div>
+            <div class="redesContact follow-col-2">
+              <a href=""><img src="/assets/whats.png" alt=""></a>
+              <a href=""><img src="/assets/insta.png" alt=""></a>
+              <a href=""><img src="/assets/face.png" alt=""></a>
+            </div>
           </div>
           <img class="w-100 olaContact" src="/assets/olaOscuro.png" alt="">
           <!-- destacados -->
@@ -147,7 +158,15 @@
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-        </div>
+          </div>
+
+          <div class="swiper mySwiper3 my-4">
+            <div id="swiper-content2" class="swiper-wrapper">
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
   
           <!-- destacados -->
         </div>
@@ -483,5 +502,23 @@
               },
             });
       </script>
+        <script>
+  
+          var swiper = new Swiper(".mySwiper3", {
+              slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 1,
+                loop: false,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+              });
+        </script>
 </body>
 </html>

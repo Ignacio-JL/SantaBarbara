@@ -667,6 +667,8 @@ body #body-main-content {
   margin: auto 2rem; }
   body #body-main-content .mySwiper2 {
     display: block; }
+  body #body-main-content .mySwiper3 {
+    display: none; }
   body #body-main-content .contact-bg {
     height: 120px;
     background-image: url(/assets/contact_bg.png);
@@ -785,6 +787,33 @@ body #body-main-content {
     margin-bottom: 2rem; }
     body #body-main-content .redesContact a {
       margin-right: 12%; }
+
+@media (min-width: 768px) {
+  body #body-main-content .mySwiper2 {
+    display: none; }
+  body #body-main-content .mySwiper3 {
+    display: block; }
+  body #body-main-content .contact-flex {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row; }
+    body #body-main-content .contact-flex .contact-col-1 {
+      width: 50%; }
+    body #body-main-content .contact-flex .contact-col-2 {
+      width: 50%; }
+      body #body-main-content .contact-flex .contact-col-2 form button {
+        position: relative;
+        left: 60%;
+        width: 40%; }
+  body #body-main-content .follow-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    body #body-main-content .follow-flex .follow-col-1 {
+      width: 30%; }
+    body #body-main-content .follow-flex .follow-col-2 {
+      width: 30%; } }
 
 body {
   position: relative;
