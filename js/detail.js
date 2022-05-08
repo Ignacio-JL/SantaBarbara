@@ -18,12 +18,18 @@ fetch(url)
 
     function showDetail(product){
         let imagesProduct ='';
+        let imagesProductDesktop='';
         let count = 0;
         product.image.forEach(element => {
             count++;
             imagesProduct += `
             <div class="detail-images-container">
                 <button id="selection-${count}"><img src="${element}" alt=""></button>
+            </div>
+            `
+            imagesProductDesktop += `
+            <div class="detail-images-container">
+                <button id="selection-${count+3}"><img src="${element}" alt=""></button>
             </div>
             `
             
@@ -83,7 +89,7 @@ fetch(url)
                 </div>
         
                 <div class="detail-images">
-                    ${imagesProduct}
+                    ${imagesProductDesktop}
                     
                 </div>
                 <div class="detail-button">
@@ -122,8 +128,40 @@ fetch(url)
             };
             
         }
+
+        count+=3;
+        for (let i = 3; i <= count; i++) {
+            document.getElementById('selection-' + i).style.border='none'
+            document.getElementById(`selection-${i}`).onclick = ()=>{
+                // document.getElementById('selection-' + i).style.border = '3px solid #FE336D'
+                if(i==4){
+                    document.getElementById('selection-4').style.border = '3px solid #FE336D'
+                    document.getElementById('selection-5').style.border= 'none'
+                    if(count==6){
+                        document.getElementById('selection-6').style.border= 'none'
+                    }
+                    document.getElementById('image-main').src=`${product.image[0]}`
+                }
+                if(i==5){
+                    document.getElementById('selection-5').style.border = '3px solid #FE336D'
+                    document.getElementById('selection-4').style.border= 'none'
+                    if(count==6){
+                        document.getElementById('selection-6').style.border= 'none'
+                    }
+                    document.getElementById('image-main').src=`${product.image[1]}`
+                }
+                if(count==6 && i==6){
+                    document.getElementById('selection-6').style.border = '3px solid #FE336D'
+                    document.getElementById('selection-4').style.border= 'none'
+                    document.getElementById('selection-5').style.border= 'none'
+                    document.getElementById('image-main').src=`${product.image[2]}`
+                }
+            };
+            
+        }
         
         document.getElementById('selection-1').style.border = '3px solid #FE336D'
+        document.getElementById('selection-4').style.border = '3px solid #FE336D'
     }
 
     function showMoreProducts(prod){
