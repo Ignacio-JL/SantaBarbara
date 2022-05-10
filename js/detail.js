@@ -96,7 +96,7 @@ fetch(url)
                     
                 </div>
                 <div class="detail-button">
-                    <a href="https://walink.co/a39c26" target="_blank"><button> Continuar </button></a>
+                    <a href="https://www.instagram.com/santabarbara_bikinis/" target="_blank"><button> Continuar </button></a>
                 </div>
         
             </div>
