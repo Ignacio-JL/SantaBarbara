@@ -7,7 +7,7 @@ async function handleSubmit(event){
     event.preventDefault();
     
         const miForm = new FormData(this);
-        const response = await fetch("https://formsubmit.co/joseignacio439@gmail.com", {
+        const response = await fetch("https://formsubmit.co/dilasciobarbara@gmail.com", {
             method: "POST",
             body: miForm,
             headers: {
