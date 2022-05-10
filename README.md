@@ -1,7 +1,7 @@
 # SantaBarbara
 Proyecto **Santa Bárbara**
 
-## Languajes
+## Languages
 HTML, CSS, SCSS, Bootstrap y JavaScript
 
 ## Contributors
