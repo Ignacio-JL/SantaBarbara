@@ -795,8 +795,8 @@ body #body-main-content {
   body #body-main-content .mySwiper3 {
     display: none; }
   body #body-main-content .contact-bg {
-    height: 120px;
-    background-image: url(/assets/contact_bg.png);
+    height: 125px;
+    background-image: url(/assets/Rectangle45.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -924,6 +924,12 @@ body #body-main-content {
       margin-right: 12%; }
 
 @media (min-width: 768px) {
+  body #body-main-content .contact-bg {
+    height: 160px;
+    background-image: url(/assets/Rectangle45.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
   body #body-main-content .mySwiper2 {
     display: none; }
   body #body-main-content .mySwiper3 {
@@ -949,6 +955,14 @@ body #body-main-content {
       width: 30%; }
     body #body-main-content .follow-flex .follow-col-2 {
       width: 30%; } }
+
+@media (min-width: 1024px) {
+  body #body-main-content .contact-bg {
+    height: 200px;
+    background-image: url(/assets/Rectangle45.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; } }
 
 body {
   position: relative;
