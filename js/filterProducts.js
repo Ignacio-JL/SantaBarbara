@@ -88,7 +88,7 @@ fetch("/js/stock.json")
                     <div class="swiper-content">
                     <img src="${p.image[0]}" class="d-block w-100" alt="">
                         <div class="slide-info">
-                            <h4>AR$${p.price},00</h4>
+                            
                             <h5>${p.name}</h5>
                             <h6>${p.type}</h6>
                             <div class="link-ver-mas"><a href="/pages/detail.html?id=${p.id}">Ver más</a></div>

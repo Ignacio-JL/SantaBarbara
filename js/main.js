@@ -80,7 +80,7 @@ function mostrarProductos(lista){
         nodo +=    `<article>
                     <h3>${prod.name}</h3>
                     <img src="${prod.image[0]}"> 
-                    <p>${prod.price}</p>
+                    
                     </article>`;
         //Cargo solo la primer imagen ya que es la unica que se va a mostrar en productos
     }
