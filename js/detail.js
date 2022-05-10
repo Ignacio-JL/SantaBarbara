@@ -51,7 +51,7 @@ fetch(url)
                         <div class="redes-down">
                             <a href="https://walink.co/a39c26 " target="_blank"><img src="../assets/whats.png" alt=""></a>
                             <a href="https://www.instagram.com/santabarbara_bikinis/" target="_blank"><img src="../assets/insta.png" alt=""></a>
-                            <a href="#"><img src="/assets/face.png"></a>
+                            
                         </div>
 
                     </div>
