@@ -20,7 +20,7 @@
         "type": "bikini",
         "price": 5300,
         "description": "Bikini de color mostaza con brillos dorados. Corpiño: para atar en la parte delantera. Bombacha: vedetina.",
-        "destacado": true
+        "destacado": false
     },
      
     {
@@ -56,7 +56,7 @@
         "type": "bikini",
         "price": 5300,
         "description": "Bikini negra con accesorio central y tiras desmontables, podes atarla como mas te guste. La bombacha de esta bikini es más chica que la contextura normal. Calcular un talle más a la hora de comprar.",
-        "destacado": true
+        "destacado": false
     },
      
     {
@@ -68,7 +68,7 @@
         "type": "bikini",
         "price": 5300,
         "description": "Bikini plateada brillosa con accesorio central desmontable. Corpiño: con tiras regulables. Bombacha: vedetina. Esta bikini es más chica que la contextura normal. Calcular un talle más a la hora de comprar.",
-        "destacado": true
+        "destacado": false
     },
     
     {
@@ -92,7 +92,7 @@
         "type": "bikini",
         "price": 5700,
         "description": "Podés usar esta bikini de dos maneras: cruzada en el frente o con las tiras de forma recta. ¿Por qué lo elegirías? Porque es un clásico aunque un poco más atrevido. Porque al atarse se adapta a todos los cuerpos. Porque el nude combinado con el salmón hacen que, probablemente, te lleves todas las miradas. Corpiño: Triángulo con escote halter con coleta para atar. Costura embolsada. Tira espaguetti para atar en el bajo busto con bolsillo. Bolsillo con posibilidad para agregar relleno. Bombacha: Estilo brasilera con tiras para atar y fruncido adaptable al tamaño de la bombacha que busques. Lycra lisa color nude y salmón en tiras. Se vende en conjunto",
-        "destacado": false
+        "destacado": true
     },
     
     {
@@ -116,7 +116,7 @@
         "type": "bikini",
         "price": 5300,
         "description": "Bikini con espalda cruzada y para atar. Bombacha: semivedetina con tiras regulables. Apto para tazas desmontables.",
-        "destacado": true
+        "destacado": false
     },
     
     {
@@ -152,7 +152,7 @@
         "type": "bikini",
         "price": 5650,
         "description": "Este modelo nunca pasa de moda. ¿Por qué lo elegirías? Por su comodidad. Porque es un clásico rockero gracias a su lycra engomada premium. Corpiño: top con escote recto y tiras fijas con dados cuadrados niquel. Bombacha: Estilo semi vedetina embolsada con cuadrados de niquel. Confeccionada en lycra de morley premium. Se vende en conjunto.",
-        "destacado": false
+        "destacado": true
     },
     
     {
@@ -176,7 +176,7 @@
         "type": "enteriza",
         "price": 6550,
         "description": "Entero de un hombro con recorte asimétrico en la cintura (lado izquierdo). La parte superior del entero asimila a un top strapless pero con un hombro. Combinación de lycras premium en estampada rayada (azul y blanco) y lisa blanca.",
-        "destacado": false
+        "destacado": true
     },
     
     {
@@ -200,7 +200,7 @@
         "type": "enteriza",
         "price": 6200,
         "description": "Enteriza roja con corte al costado, un solo hombro con tira ajustable.",
-        "destacado": true
+        "destacado": false
     },
     
     {
@@ -212,7 +212,7 @@
         "type": "enteriza",
         "price": 6050,
         "description": "Entera súper fina con escote cuadrado y tiras regulables. Espalda baja y descubierta",
-        "destacado": true
+        "destacado": false
     },
     
     {
@@ -224,7 +224,7 @@
         "type": "enteriza",
         "price": 6300,
         "description": "En los costados tiene un fruncido que permite que se adapte a tu cuerpo y favorezca tu figura. ¿Por qué lo elegirías? Porque es un must para usar tanto en la playa como para salir. Porque es super cómoda. Porque tiene un estampado exclusivo. Escote: Recto. Espalda: Recta con tiras regulables. Bombacha: Vedetina. Lycra premium texturizada con estampa exclusiva. Se vende en conjunto.",
-        "destacado": false
+        "destacado": true
     },
     
     {
@@ -260,7 +260,7 @@
         "type": "comfy",
         "price": 8950,
         "description": "Conjunto confeccionado en algodón rústico. Buzo con capucha, bordado a tono con la palabra SIMPLICITY. Short y buzo oversize. Cómodo, práctico e ideal para usar en cualquier situación.",
-        "destacado": false
+        "destacado": true
     },
     
     
