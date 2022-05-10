@@ -1,6 +1,6 @@
 let messageConfirm = document.querySelector('#mailOk');
-    const form = document.querySelector('#formulario');
-    form.addEventListener('submit', handleSubmit);
+    const formC = document.querySelector('#formulario');
+    formC.addEventListener('submit', handleSubmit);
 
 //Envio Mail fetch
 async function handleSubmit(event){
@@ -18,7 +18,7 @@ async function handleSubmit(event){
             messageConfirm.style.display = "block";
             setTimeout(() => {
                messageConfirm.style.display = "none" 
-               form.reset();
+               formC.reset();
             }, 4500);
         }
         
