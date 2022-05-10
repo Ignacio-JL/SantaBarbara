@@ -799,7 +799,7 @@ body #body-main-content {
     display: none; }
   body #body-main-content .contact-bg {
     height: 125px;
-    background-image: url(/assets/Rectangle45.png);
+    background-image: url(/assets/imagecontact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -929,7 +929,7 @@ body #body-main-content {
 @media (min-width: 768px) {
   body #body-main-content .contact-bg {
     height: 160px;
-    background-image: url(/assets/Rectangle45.png);
+    background-image: url(/assets/imagecontact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; }
@@ -962,10 +962,10 @@ body #body-main-content {
 @media (min-width: 1024px) {
   body #body-main-content .contact-bg {
     height: 200px;
-    background-image: url(/assets/Rectangle45.png);
+    background-image: url(/assets/imagecontact.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; } }
+    background-position: 0% 20%; } }
 
 body {
   position: relative;
