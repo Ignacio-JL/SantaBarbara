@@ -1,10 +1,10 @@
 # SantaBarbara
 Proyecto **Santa Bárbara**
 
-##Languajes
+## Languajes
 HTML, CSS, SCSS, Bootstrap y JavaScript
 
-##Contributors
+## Contributors
 
-##Page
+## Page
 [Santa Bárbara](https://santabarbarabikini.netlify.app/)
