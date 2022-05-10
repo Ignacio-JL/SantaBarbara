@@ -23,7 +23,7 @@ const bikiniCards = data => {
     data.forEach(producto => {
         if (producto.destacado) {
             templateCard.querySelector('h5').textContent = producto.name.toUpperCase() 
-            templateCard.querySelector('p').textContent = 'AR$ ' + producto.price
+            // templateCard.querySelector('p').textContent = 'AR$ ' + producto.price
             templateCard.querySelector('#type').textContent = producto.type.toUpperCase()
             templateCard.querySelector('img').setAttribute("src", producto.image[0])
             templateCard.querySelector('button').dataset.id = producto.id
